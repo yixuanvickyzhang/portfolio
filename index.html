@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yixuan (Vicky) Zhang | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for premium editorial headers, Inter for sleek copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth transitions for navigation */
+        .tab-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-[#FAF9F5] text-[#1C1C1C] font-sans antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Premium Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur border-b border-stone-200/80 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="font-serif font-bold text-lg tracking-tight text-stone-900">Yixuan (Vicky) Zhang</span>
+                <span class="text-[10px] tracking-widest uppercase font-semibold text-emerald-800">Consumer Insights & Growth Strategy</span>
+            </div>
+            
+            <div class="flex items-center gap-6 text-sm font-medium text-stone-600">
+                <a href="#about" class="hover:text-stone-900 transition-colors">About</a>
+                <a href="#cases" class="hover:text-stone-900 transition-colors">Case Studies</a>
+                <a href="mailto:vickyzhang0310@gmail.com" class="bg-stone-900 text-white px-4 py-2 rounded-lg text-xs hover:bg-stone-800 transition-colors flex items-center gap-2">
+                    <i data-lucide="mail" class="w-3.5 h-3.5"></i> Get in Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header Block -->
+    <header id="about" class="max-w-6xl mx-auto px-6 pt-16 pb-12 border-b border-stone-200">
+        <div class="max-w-3xl space-y-6">
+            <span class="text-xs font-bold tracking-widest uppercase text-emerald-800">LSE MSc Marketing & Edinburgh MA First Class Grad</span>
+            <h1 class="text-5xl md:text-6xl font-serif font-medium tracking-tight text-stone-900 leading-[1.1]">
+                Bridging the gap between <span class="italic font-normal text-stone-500">consumer psychology</span> and <span class="underline decoration-emerald-800 underline-offset-8">commercial logic</span>.
+            </h1>
+            <p class="text-base text-stone-600 leading-relaxed font-sans max-w-xl">
+                I formulate growth marketing structures by pairing quantitative R/Python data analytics with qualitative consumer neuroscience frameworks. My goal is simple: engineer predictable attention, engagement, and conversion models.
+            </p>
+            
+            <!-- Quick Resume Pill Badges -->
+            <div class="flex flex-wrap gap-2 pt-2">
+                <span class="bg-stone-100 text-stone-700 text-xs px-3 py-1.5 rounded-full border border-stone-200/60 font-medium">Data Modeling (R, Python, SQL)</span>
+                <span class="bg-stone-100 text-stone-700 text-xs px-3 py-1.5 rounded-full border border-stone-200/60 font-medium">Neuromarketing Frameworks</span>
+                <span class="bg-stone-100 text-stone-700 text-xs px-3 py-1.5 rounded-full border border-stone-200/60 font-medium">B2B Product Positioning</span>
+                <span class="bg-stone-100 text-stone-700 text-xs px-3 py-1.5 rounded-full border border-stone-200/60 font-medium">Campaign Performance Metrics</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Case Study Section -->
+    <section id="cases" class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+        
+        <!-- Tab Controls & Introduction -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-stone-200">
+            <div class="space-y-2">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-emerald-800 font-sans">Strategic Cases</h2>
+                <p class="text-2xl font-serif font-semibold text-stone-900">Proven business impact across creative, non-profit, and startup landscapes.</p>
+            </div>
+            
+            <!-- Tab Controls -->
+            <div class="bg-stone-100 p-1.5 rounded-xl border border-stone-200 flex gap-1 self-start md:self-auto">
+                <button id="tab-1" onclick="switchCaseTab(1)" class="px-4 py-2 rounded-lg text-xs font-semibold tab-transition bg-white text-stone-950 shadow-sm">
+                    1. Edinburgh Fringe
+                </button>
+                <button id="tab-2" onclick="switchCaseTab(2)" class="px-4 py-2 rounded-lg text-xs font-semibold tab-transition text-stone-500 hover:text-stone-900">
+                    2. 180DC Strategy
+                </button>
+                <button id="tab-3" onclick="switchCaseTab(3)" class="px-4 py-2 rounded-lg text-xs font-semibold tab-transition text-stone-500 hover:text-stone-900">
+                    3. Koru Impact
+                </button>
+            </div>
+        </div>
+
+        <!-- Render Target Container (Dynamic) -->
+        <div id="active-case-container" class="min-h-[600px] transition-all duration-300">
+            <!-- Dynamic Content Will Be Populated Here -->
+        </div>
+
+    </section>
+
+    <!-- Clean, Non-distracting Footer Contact Cards -->
+    <footer class="bg-stone-900 text-stone-400 py-16 px-6 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <span class="font-serif font-bold text-lg text-white block">Vicky Zhang</span>
+                <p class="text-xs text-stone-400 leading-relaxed">
+                    Analyzing behavior and designing commercial assets. London based, open for roles in Consumer Insight, Market Research, and Digital Campaign Strategy.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-stone-200 block">Contact Information</span>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i> vickyzhang0310@gmail.com</li>
+                    <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> +44 7908799705</li>
+                    <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i> London, SE1 0BW</li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-stone-200 block">Professional Presence</span>
+                <div class="flex gap-4 text-xs">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</a>
+                    <a href="https://github.com" target="_blank" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="github" class="w-4 h-4"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Rendering Engine -->
+    <script>
+        let currentTab = 1;
+
+        // Structured Case Case Database
+        const casesDb = {
+            1: {
+                title: "Optimizing Audience Engagement at Edinburgh Fringe",
+                category: "Consumer Insight & Audience Analysis",
+                client: "Edinburgh Research Office",
+                timeline: "Jun — Aug 2024",
+                role: "Communications & Engagement Intern",
+                challenge: "Promoting 47 academically complex, thought-provoking research shows in a high-density, highly-distracted public festival space.",
+                insight: "Rather than marketing general creative blurbs, I color-coded shows into highly intuitive categories to minimize choice-overload, matching consumer behavior insights with real-time conversion models.",
+                analysis: "Monitored group bookings and daily conversions to re-allocate cross-promotional activity toward underrepresented subjects. Implemented feedback loops from audience post-show surveys.",
+                metrics: [
+                    { label: "Direct Ticket Sales", value: "1,700+", desc: "Record ticket conversions in CoDI show history." },
+                    { label: "Audience Reach", value: "8,000+", desc: "Driven organically with zero paid search budget." },
+                    { label: "Engagement Uplift", value: "+20%", desc: "Incremental boost over historical averages." }
+                ],
+                codeSnippet: `# Run ANOVA on festival booking conversion channels\nfit <- aov(tickets ~ channel * category, data = sales_df)\nsummary(fit)`
+            },
+            2: {
+                title: "Data-Driven Talent Inbound Strategy & Funnel Optimization",
+                category: "Growth Marketing & Lead Generation",
+                client: "180 Degrees Consulting Edinburgh",
+                timeline: "Sep 2023 — May 2024",
+                role: "Marketing Director",
+                challenge: "Managing candidate recruitment pipelines across the university student base while strictly maintaining selectivity rates.",
+                insight: "Designed automated CRM segments and custom content profiles mapping individual track values (e.g., Finance, Non-Profits) directly to distinct student cohorts.",
+                analysis: "Analyzed click-through and signup rates over historical recruiting data in R, revealing that newsletters delivered exactly 4 days prior to deadlines achieved 3x higher responses.",
+                metrics: [
+                    { label: "Active Signups", value: "300+", desc: "Achieved record applicant volume per recruiting cycle." },
+                    { label: "Follower Baseline", value: "+30%", desc: "Gained with polished, professional brand standards." },
+                    { label: "Engagement Rate", value: "+80%", desc: "Increase in overall interactions across digital channels." }
+                ],
+                codeSnippet: `# Run linear regression on signup conversion parameters\nmodel <- lm(signups ~ send_hour + list_size, data = email_data)\nsummary(model)`
+            },
+            3: {
+                title: "Launching Social Presence for Sustainable Fintech Ventures",
+                category: "B2B Startup Positioning",
+                client: "Koru Impact Solutions",
+                timeline: "Mar — May 2024",
+                role: "Brand Strategy Intern",
+                challenge: "Establishing trust and clarifying complex FCA compliance requirements for newly launched ESG and sustainable investment funds.",
+                insight: "Repositioned technical anti-greenwashing parameters into approachable, visual 'connecting the dots' slide carousels on LinkedIn designed to attract fund administrators.",
+                analysis: "Conducted thorough competitor social media audits and monitored audience engagement to streamline content pipelines on Trello.",
+                metrics: [
+                    { label: "Profile Foundation", value: "0 to 1", desc: "Constructed company LinkedIn branding entirely from scratch." },
+                    { label: "Pipeline Streamlining", value: "100%", desc: "Integrated Trello boards for agile content execution." },
+                    { label: "FCA Compliance Guidance", value: "ESG", desc: "Successfully navigated complex financial compliance copy." }
+                ],
+                codeSnippet: `# Map competitive ESG positioning metrics\nlibrary(ggplot2)\nggplot(esg_data, aes(x=reach, y=sentiment)) + geom_point()`
+            }
+        };
+
+        function renderActiveCase() {
+            const data = casesDb[currentTab];
+            const container = document.getElementById('active-case-container');
+            
+            container.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Left Editorial Panel -->
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold tracking-widest uppercase text-emerald-800">${data.category}</span>
+                            <h3 class="text-3xl md:text-4xl font-serif font-bold text-stone-900 leading-tight">${data.title}</h3>
+                        </div>
+
+                        <!-- Structured Text Blocks -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-stone-200 pt-6">
+                            <div class="space-y-2">
+                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">The Business Problem</h4>
+                                <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.challenge}</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Psychology-Backed Insight</h4>
+                                <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.insight}</p>
+                            </div>
+                        </div>
+
+                        <!-- Analysis Block -->
+                        <div class="space-y-4 border-t border-stone-200 pt-6">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Analytical Methodology</h4>
+                            <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.analysis}</p>
+                        </div>
+
+                        <!-- Data Analytics Framework Showcase -->
+                        <div class="bg-stone-900 text-stone-200 p-5 rounded-xl border border-stone-800 space-y-3 font-mono text-xs shadow-inner">
+                            <div class="flex justify-between items-center text-stone-500 border-b border-stone-800 pb-2 text-[10px]">
+                                <span>analysis_workspace.R</span>
+                                <span class="text-emerald-500 font-bold flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Active Script
+                                </span>
+                            </div>
+                            <pre class="overflow-x-auto whitespace-pre-wrap">${data.codeSnippet}</pre>
+                        </div>
+                    </div>
+
+                    <!-- Right Sidebar: Metadata & Key Results Panel -->
+                    <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+                        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-6">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block pb-2 border-b border-stone-100">Project Parameters</span>
+                            <div class="space-y-4 text-xs font-sans">
+                                <div>
+                                    <span class="text-[10px] text-stone-400 uppercase tracking-wider block">Role</span>
+                                    <span class="font-semibold text-stone-800">${data.role}</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-stone-400 uppercase tracking-wider block">Client / Organization</span>
+                                    <span class="font-semibold text-stone-800">${data.client}</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-stone-400 uppercase tracking-wider block">Duration</span>
+                                    <span class="font-semibold text-stone-800">${data.timeline}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quantitative Outcomes Summary -->
+                        <div class="bg-stone-900 text-white p-6 rounded-2xl border border-stone-800 space-y-6">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block border-b border-stone-800 pb-2">Quantitative Outcomes</span>
+                            <div class="space-y-6">
+                                ${data.metrics.map(metric => `
+                                    <div class="space-y-1">
+                                        <span class="text-[10px] text-stone-400 block uppercase tracking-wider">${metric.label}</span>
+                                        <div class="text-3xl font-serif font-bold text-emerald-400">${metric.value}</div>
+                                        <p class="text-[11px] text-stone-400 leading-snug">${metric.desc}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            // Refresh icons inside rendered HTML
+            lucide.createIcons();
+        }
+
+        function switchCaseTab(tabNum) {
+            currentTab = tabNum;
+            
+            // Loop through tabs to reset styles
+            for (let i = 1; i <= 3; i++) {
+                const tabEl = document.getElementById(`tab-${i}`);
+                if (i === tabNum) {
+                    tabEl.className = "px-4 py-2 rounded-lg text-xs font-semibold tab-transition bg-white text-stone-950 shadow-sm";
+                } else {
+                    tabEl.className = "px-4 py-2 rounded-lg text-xs font-semibold tab-transition text-stone-500 hover:text-stone-900";
+                }
+            }
+            renderActiveCase();
+        }
+
+        // Initialize presentation on load
+        window.onload = function () {
+            renderActiveCase();
+        }
+    </script>
+</body>
+</html>
