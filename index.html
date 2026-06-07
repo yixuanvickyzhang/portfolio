@@ -554,7 +554,7 @@ customVisualHTML: `
         </div>
     </div>
 </div>
-        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-6">
             <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider font-sans">Creative Assets — Social Media & Print Collateral</span>
             <div class="flex gap-3 overflow-x-auto pb-2">
     <img src="assets/180dc-alumni-panel.png" class="h-48 w-auto rounded-xl border border-stone-200 flex-shrink-0 object-cover" alt="Alumni Panel Post" />
@@ -895,22 +895,54 @@ customVisualHTML: `
                     "Implement low-cognitive simplified graphics for late-night interface configurations."
                 ],
                 customChartHTML: `
-                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Observed Visual Area-of-Interest (AOI) Attention Mapping (N=25)</span>
-                        <div class="grid grid-cols-2 gap-4 text-center font-sans text-xs">
-                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-100">
-                                <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">With-Face Condition</span>
-                                <div class="text-xl font-bold text-stone-900 py-1">68% Dwell on Face</div>
-                                <span class="text-[10px] text-stone-400 block">Text cues largely missed or delayed by +1213ms (H3 Supported).</span>
-                            </div>
-                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-100">
-                                <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">No-Face Condition</span>
-                                <div class="text-xl font-bold text-emerald-800 py-1">2x Info Processing</div>
-                                <span class="text-[10px] text-emerald-700 block">Attention distributes evenly to title, caps & tags.</span>
-                            </div>
-                        </div>
-                    </div>
-                `
+    <div class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+            <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Attention Allocation by Thumbnail Type</span>
+            <div class="space-y-3 font-sans text-xs text-stone-600">
+                <div class="flex items-center gap-3">
+                    <span class="w-28 text-right text-[11px] shrink-0">Face (outward gaze)</span>
+                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-[#C0533A] h-3 rounded-full" style="width: 88%"></div></div>
+                    <span class="text-[#C0533A] font-bold w-16 shrink-0">Longest</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-28 text-right text-[11px] shrink-0">Face (inward gaze)</span>
+                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-emerald-700 h-3 rounded-full" style="width: 64%"></div></div>
+                    <span class="text-emerald-700 font-bold w-16 shrink-0">Medium</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-28 text-right text-[11px] shrink-0">Text-led thumbnail</span>
+                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-stone-300 h-3 rounded-full" style="width: 38%"></div></div>
+                    <span class="text-stone-400 font-bold w-16 shrink-0">Shorter</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-28 text-right text-[11px] shrink-0">Background art only</span>
+                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-stone-200 h-3 rounded-full" style="width: 22%"></div></div>
+                    <span class="text-stone-400 font-bold w-16 shrink-0">Shortest</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-l-4 border-emerald-600 pl-4 py-2">
+            <p class="text-sm italic text-stone-600 leading-relaxed">"Users make content decisions within 500ms of gaze — but direct outward eye contact halts vertical scroll traversal. The face captures attention, but the wrong gaze direction stops the browsing momentum."</p>
+        </div>
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block">Brand Recommendations</span>
+            <div class="space-y-4">
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Directional gaze structuring.</span> Use thumbnails where faces look rightward or toward CTAs — implicitly directing the user's next visual sweep.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Dynamic AVA threshold feeds.</span> Alternate contrast levels algorithmically to prevent banner blindness and visual fatigue across session.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Segment by time-of-day context.</span> Serve high-contrast, text-minimal thumbnails during late-night browsing to match reduced cognitive load capacity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
             },
             'tfl': {
                 category: "Behavioral Economics & Choice Architecture",
@@ -924,11 +956,43 @@ customVisualHTML: `
                     "Replace dense corporate statements with highly accessible single-focus visuals."
                 ],
                 customChartHTML: `
-                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-2">
-                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Fairness Delivery Flow (Self-Determination Theory)</span>
-                        <p class="text-xs text-emerald-800 font-medium">Acknowledge Constraint ➔ Reciprocity Context ➔ Value Realisation (Identified Regulation)</p>
-                    </div>
-                `
+    <div class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+            <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Where Public Resistance Originates</span>
+            <div class="space-y-2">
+                <div class="bg-rose-50 border border-rose-100 px-4 py-3 rounded-xl text-xs text-rose-700">
+                    ① Loss of autonomy — <span class="italic">"I have no choice"</span>
+                </div>
+                <div class="bg-stone-50 border border-stone-100 px-4 py-3 rounded-xl text-xs text-stone-600">
+                    ② Perceived exploitation — <span class="italic">"They're profiting from necessity"</span>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 px-4 py-3 rounded-xl text-xs text-emerald-700">
+                    ③ Transactional unfairness — <span class="italic">"I'm paying more for the same"</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-l-4 border-emerald-600 pl-4 py-2">
+            <p class="text-sm italic text-stone-600 leading-relaxed">"Consumers evaluate fare increases on transactional fairness, not economic necessity. Providing infrastructure cost data doesn't curb resistance — unless it's framed through a Gist Communication model that makes the benefit feel local and personal."</p>
+        </div>
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block">Brand Recommendations</span>
+            <div class="space-y-4">
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Hyper-localise the value narrative.</span> Frame copy as "Your fare funds upgrades at this station" — community proximity shifts perception from exploitation to investment.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Deploy autonomy-preserving micro-nudges.</span> Offer automated off-peak credit rewards — preserves user agency while managing demand patterns.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Replace data density with Gist messaging.</span> Visual breakdowns focused on safety and reliability improvements outperform multi-page financial justifications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
             },
             'ppc': {
                 category: "Performance-Based Growth Optimisation & Budget Attribution",
