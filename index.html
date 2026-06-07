@@ -62,7 +62,7 @@
     <nav class="sticky top-0 s-50 bg-cream/90 backdrop-blur border-b border-stone-200/80 px-6 py-4">
         <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
             <div class="flex flex-col items-center lg:items-start">
-                <span class="font-serif font-bold text-xl tracking-tight text-stone-900">Yixuan (Vicky) shang</span>
+                <span class="font-serif font-bold text-xl tracking-tight text-stone-900">Yixuan (Vicky) Zhang</span>
                 <span class="text-[9px] tracking-widest uppercase font-semibold text-emerald-800">Consumer Behaviour & Marketing Strategy</span>
             </div>
             
@@ -80,7 +80,7 @@
             </div>
 
             <!-- Contact Link -->
-            <a href="mailto:vickyshang0310@gmail.com" class="hidden lg:flex bg-stone-900 text-white px-4 py-2 rounded-lg text-xs hover:bg-stone-800 transition-colors items-center gap-2">
+            <a href="mailto:vickyzhang0310@gmail.com" class="hidden lg:flex bg-stone-900 text-white px-4 py-2 rounded-lg text-xs hover:bg-stone-800 transition-colors items-center gap-2">
                 <i data-lucide="mail" class="w-3.5 h-3.5"></i> Let's Collaborate
             </a>
         </div>
@@ -881,7 +881,25 @@ customVisualHTML: `
                             *Qualitative & Quantitative Triangulation: Exploratory interviews mapped out a fifth distinct driver: Cultural Exploration (ties to Irish heritage, study abroad transitions, and Celtic fandoms). The subsequent boxplot diagnostics confirmed that Cultural motives are highly pronounced for recent international arrivals and transient tourists compared to long-term UK residents.
                         </p>
                     </div>
-                `
+                        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block border-b border-stone-800 pb-2"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i>Brand Recommendations</span>
+            <div class="space-y-4">
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Lead with cultural distinctiveness, not social proof.</span> Messaging that positions Guinness as "what everyone drinks" actively suppresses purchase intent. Lean into ritual and heritage as differentiation.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Weaponise the Cultural Exploration motive.</span> Tourists, international students, and curious drinkers are the highest-intent segment — target via "first Guinness" moments and travel-adjacent content.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Codify micro-rituals in marketing assets.</span> The "Split the G" viral mechanic works because it creates an initiation into a culture. Build campaigns around learnable rituals that signal belonging without demanding conformity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
             },
             'netflix': {
                 category: "Consumer Neuroscience & Eye-Tracking Optimisation",
@@ -925,7 +943,7 @@ customVisualHTML: `
             <p class="text-sm italic text-stone-600 leading-relaxed">"Users make content decisions within 500ms of gaze — but direct outward eye contact halts vertical scroll traversal. The face captures attention, but the wrong gaze direction stops the browsing momentum."</p>
         </div>
         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block">Brand Recommendations</span>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i>Brand Recommendations</span>
             <div class="space-y-4">
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
@@ -975,7 +993,7 @@ customVisualHTML: `
             <p class="text-sm italic text-stone-600 leading-relaxed">"Consumers evaluate fare increases on transactional fairness, not economic necessity. Providing infrastructure cost data doesn't curb resistance — unless it's framed through a Gist Communication model that makes the benefit feel local and personal."</p>
         </div>
         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block">Brand Recommendations</span>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 block"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i>Brand Recommendations</span>
             <div class="space-y-4">
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
@@ -1099,8 +1117,8 @@ customVisualHTML: `
             if (!target) return;
 
             target.innerHTML = `
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
-                    <div class="lg:col-span-7 space-y-6">
+                <div class="animate-fadeIn">
+    <div class="space-y-6">
                         <div class="space-y-1">
                             <span class="text-xs font-bold tracking-widest uppercase text-emerald-800 block">${data.category}</span>
                             <h3 class="text-2xl md:text-3xl font-serif font-bold text-stone-900 leading-tight">${data.title}</h3>
@@ -1116,21 +1134,6 @@ customVisualHTML: `
                         </div>
                         <div class="pt-2">${data.customChartHTML}</div>
                     </div>
-
-                    <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
-                        <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400 border-b border-stone-100 pb-2 flex items-center gap-2">
-                            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-700"></i> Strategic Recommendations
-                        </h4>
-                        <ul class="space-y-4 text-xs text-stone-600 font-sans leading-relaxed">
-                            ${data.recommendations.map(rec => `
-                                <li class="flex gap-2 items-start">
-                                    <span class="text-emerald-700 font-bold">▪</span>
-                                    <span>${rec}</span>
-                                </li>
-                            `).join('')}
-                        </ul>
-                    </div>
-                </div>
             `;
             lucide.createIcons();
         }
