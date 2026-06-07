@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yixuan (Vicky) Zhang — Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for premium editorial headers, Inter for clean copy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 0.4s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tab-transition {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bg-cream {
+            background-color: #FAF9F5;
+        }
+    </style>
+</head>
+<body class="bg-cream text-[#1C1C1C] font-sans antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Header / Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-stone-200/80 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div class="flex flex-col items-center lg:items-start">
+                <span class="font-serif font-bold text-xl tracking-tight text-stone-900">Yixuan (Vicky) Zhang</span>
+                <span class="text-[9px] tracking-widest uppercase font-semibold text-emerald-800">Consumer Neuroscience & Growth Strategy</span>
+            </div>
+            
+            <!-- Global Nav Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2 bg-stone-100 p-1 rounded-xl border border-stone-200">
+                <button id="nav-about" onclick="switchGlobalTab('about')" class="px-4 py-2 rounded-lg text-xs font-semibold tab-transition bg-white text-stone-950 shadow-sm">
+                    About
+                </button>
+                <button id="nav-work" onclick="switchGlobalTab('work')" class="px-4 py-2 rounded-lg text-xs font-semibold tab-transition text-stone-500 hover:text-stone-900">
+                    Work Experience
+                </button>
+                <button id="nav-research" onclick="switchGlobalTab('research')" class="px-4 py-2 rounded-lg text-xs font-semibold tab-transition text-stone-500 hover:text-stone-900">
+                    Academic Research Insights
+                </button>
+            </div>
+
+            <!-- Contact Link -->
+            <a href="mailto:vickyzhang0310@gmail.com" class="hidden lg:flex bg-stone-900 text-white px-4 py-2 rounded-lg text-xs hover:bg-stone-800 transition-colors items-center gap-2">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i> Let's Collaborate
+            </a>
+        </div>
+    </nav>
+
+    <!-- Global Content Area -->
+    <main class="max-w-6xl mx-auto px-6 py-12 min-h-[750px]">
+        
+        <!-- SECTION 1: ABOUT (ACTIVE BY DEFAULT) -->
+        <div id="section-about" class="animate-fadeIn space-y-16">
+            <!-- Hero Header -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8 space-y-6">
+                    <span class="text-xs font-bold tracking-widest uppercase text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-3 py-1.5 rounded-full inline-block">MSc Marketing Graduate, LSE</span>
+                    <h1 class="text-5xl md:text-6xl font-serif font-medium tracking-tight text-stone-900 leading-[1.1]">
+                        Bridging the gap between <span class="italic font-normal text-stone-500">cognitive mechanics</span> and <span class="underline decoration-emerald-800 underline-offset-8">commercial scale</span>.
+                    </h1>
+                    <p class="text-base text-stone-600 leading-relaxed max-w-2xl">
+                        I formulate data-driven growth models by integrating quantitative metrics with consumer psychology insights. Trained at the London School of Economics and the University of Edinburgh, I transform raw diagnostic data into high-converting commercial recommendations.
+                    </p>
+                </div>
+                <!-- Mini Profile Stat Block -->
+                <div class="lg:col-span-4 bg-white p-6 rounded-3xl border border-stone-200/80 shadow-sm space-y-4">
+                    <div class="border-b border-stone-100 pb-3">
+                        <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">LSE Master of Science</span>
+                        <span class="text-sm font-semibold text-stone-800">MSc Marketing (Distinction track)</span>
+                    </div>
+                    <div class="border-b border-stone-100 pb-3">
+                        <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">Edinburgh Master of Arts</span>
+                        <span class="text-sm font-semibold text-stone-800">MA (Hons) Psychology & Business (First Class)</span>
+                    </div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">Languages & Communications</span>
+                        <span class="text-sm font-semibold text-stone-800">Mandarin (Native), English (Fluent), Korean (Int), French (Beg)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Certifications Block -->
+            <div class="space-y-6">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-stone-400">Professional Credentials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-3xl border border-stone-200/60 shadow-sm flex gap-4 items-start">
+                        <div class="bg-emerald-50 text-emerald-800 p-3 rounded-2xl"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+                        <div class="space-y-2">
+                            <span class="text-[10px] tracking-widest uppercase font-bold text-emerald-800 block">Google Professional Certification</span>
+                            <h3 class="font-serif font-bold text-lg text-stone-900 leading-snug">Google AI Professional Certificate</h3>
+                            <p class="text-xs text-stone-500 leading-relaxed font-sans">
+                                Fluent in applying Generative AI workflows to Brainstorming, Research, Communication, Content Creation, Data Analysis, and Python/R-coding. Constructed a portfolio of 20+ advanced digital artifacts.
+                            </p>
+                            <span class="text-[10px] text-stone-400 font-semibold block">Obtained: June 6, 2026</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-stone-200/60 shadow-sm flex gap-4 items-start">
+                        <div class="bg-emerald-50 text-emerald-800 p-3 rounded-2xl"><i data-lucide="award" class="w-6 h-6"></i></div>
+                        <div class="space-y-2">
+                            <span class="text-[10px] tracking-widest uppercase font-bold text-emerald-800 block">HubSpot Academy Credentials</span>
+                            <h3 class="font-serif font-bold text-lg text-stone-900 leading-snug">Hubspot Sales Hub Software Certificate</h3>
+                            <p class="text-xs text-stone-500 leading-relaxed font-sans">
+                                Validated competency in CRM architecture, automated inbound pipeline building, deal-stage optimization, contact segmentation, and friction-free sales workflow management.
+                            </p>
+                            <span class="text-[10px] text-stone-400 font-semibold block">Obtained: October 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Pillars of Competency -->
+            <div class="space-y-6">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Expertise & Methodology</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm space-y-3">
+                        <div class="bg-emerald-50 text-emerald-800 p-2.5 rounded-xl w-fit"><i data-lucide="brain" class="w-5 h-5"></i></div>
+                        <h3 class="font-serif font-bold text-lg text-stone-900">Psychology & Neuroscience</h3>
+                        <p class="text-xs text-stone-500 leading-relaxed font-sans">Testing assumptions using eye-tracking metrics, cognitive load limits, and visual attention cues to streamline purchase paths.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm space-y-3">
+                        <div class="bg-emerald-50 text-emerald-800 p-2.5 rounded-xl w-fit"><i data-lucide="binary" class="w-5 h-5"></i></div>
+                        <h3 class="font-serif font-bold text-lg text-stone-900">Data Analytics (R / Python)</h3>
+                        <p class="text-xs text-stone-500 leading-relaxed font-sans">Writing clean multivariate regression modeling, ANOVA assumptions check, homoscedasticity verification, and Chi-Square diagnostics.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm space-y-3">
+                        <div class="bg-emerald-50 text-emerald-800 p-2.5 rounded-xl w-fit"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+                        <h3 class="font-serif font-bold text-lg text-stone-900">Performance Media</h3>
+                        <p class="text-xs text-stone-500 leading-relaxed font-sans">Shifting from rigid funnels to active performance allocations. Optimizing search and shopping ROAS to drive 2.5x revenue targets.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm space-y-3">
+                        <div class="bg-emerald-50 text-emerald-800 p-2.5 rounded-xl w-fit"><i data-lucide="activity" class="w-5 h-5"></i></div>
+                        <h3 class="font-serif font-bold text-lg text-stone-900">B2B Product Positioning</h3>
+                        <p class="text-xs text-stone-500 leading-relaxed font-sans">Translating high-technical advisory, AI products, and compliance tools (FCA rules) into trusted visual marketing materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: WORK EXPERIENCE -->
+        <div id="section-work" class="hidden animate-fadeIn space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-bold tracking-widest uppercase text-emerald-800">Professional Career Milestones</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-900">Work Experience Portfolio</h2>
+                <p class="text-sm text-stone-500">Structured strategic case breakdowns. Click the buttons below to switch between roles.</p>
+            </div>
+
+            <!-- Sub Navigation Tabs for Work Experience -->
+            <div class="flex flex-wrap gap-2 border-b border-stone-200 pb-4">
+                <button id="work-tab-fringe" onclick="switchWorkSubTab('fringe')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-900 text-white shadow-sm">
+                    Edinburgh Fringe (Intern)
+                </button>
+                <button id="work-tab-treasury" onclick="switchWorkSubTab('treasury')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    Your Treasury (B2B Intern)
+                </button>
+                <button id="work-tab-koru" onclick="switchWorkSubTab('koru')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    Koru Impact (Fintech Intern)
+                </button>
+                <button id="work-tab-consulting" onclick="switchWorkSubTab('consulting')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    180 Degrees Consulting (Director)
+                </button>
+            </div>
+
+            <!-- DYNAMIC EXPERIENCE HOLDER -->
+            <div id="work-experience-content" class="min-h-[500px]">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+
+        <!-- SECTION 3: ACADEMIC RESEARCH INSIGHTS -->
+        <div id="section-research" class="hidden animate-fadeIn space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-bold tracking-widest uppercase text-emerald-800">Rigorous Research Mapped to Commercial Actions</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-900">Academic Research Deep-Dives</h2>
+                <p class="text-sm text-stone-500">Explore interactive research reports. Click the buttons below to switch between case studies.</p>
+            </div>
+
+            <!-- Sub Navigation Tabs for Research -->
+            <div class="flex flex-wrap gap-2 border-b border-stone-200 pb-4">
+                <button id="res-tab-ai" onclick="switchResearchSubTab('ai')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-900 text-white shadow-sm">
+                    AI Safety Product Trust (Dissertation)
+                </button>
+                <button id="res-tab-guinness" onclick="switchResearchSubTab('guinness')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    Guinness Motives Analysis (Analytics)
+                </button>
+                <button id="res-tab-netflix" onclick="switchResearchSubTab('netflix')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    Netflix Biometrics & Gaze UX (Neuroscience)
+                </button>
+                <button id="res-tab-tfl" onclick="switchResearchSubTab('tfl')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    TfL Behavioural Strategy (Economics)
+                </button>
+                <button id="res-tab-ppc" onclick="switchResearchSubTab('ppc')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
+                    PPC Ad Budget Allocation (Digital Strategy)
+                </button>
+            </div>
+
+            <!-- DYNAMIC REPORT HOLDER -->
+            <div id="research-report-content" class="min-h-[500px]">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Professional Clean Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-16 px-6 border-t border-stone-800 mt-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
+            <div class="space-y-4">
+                <span class="font-serif font-bold text-lg text-white block">Yixuan (Vicky) Zhang</span>
+                <p class="text-xs text-stone-400 leading-relaxed max-w-xs">
+                    Translating high-level psychological insights into clean, predicted, and revenue-maximizing commercial campaign metrics. Based in London, UK.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-stone-200 block">Contact Parameters</span>
+                <ul class="space-y-2.5 text-xs">
+                    <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i> vickyzhang0310@gmail.com</li>
+                    <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> +44 7908799705</li>
+                    <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i> 8-16 Pocock St, London, SE1 0BW</li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-stone-200 block">Network Anchors</span>
+                <div class="flex gap-4 text-xs font-medium">
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="linkedin" class="w-4 h-4 text-emerald-400"></i> LinkedIn</a>
+                    <a href="https://github.com" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="github" class="w-4 h-4 text-emerald-400"></i> GitHub Workspace</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-stone-800 mt-12 pt-6 text-center text-xs text-stone-500">
+            © 2026 Yixuan (Vicky) Zhang — Interactive Strategic Portfolio. Built on top-tier analytical models.
+        </div>
+    </footer>
+
+    <!-- JS RENDERING ENGINE -->
+    <script>
+        // Track global navigation states
+        let activeGlobalTab = 'about';
+        let activeResearchSubTab = 'ai';
+        let activeWorkSubTab = 'fringe';
+
+        // Structured Work Experience Database
+        const workDb = {
+            'fringe': {
+                category: "Consumer Insight & Audience Analysis",
+                title: "Optimizing Audience Engagement at Edinburgh Fringe",
+                challenge: "Promoting 47 academically complex, thought-provoking research shows in a high-density, highly-distracted public festival space.",
+                insight: "Rather than marketing general creative blurbs, I color-coded shows into highly intuitive categories to minimize choice-overload, matching consumer behavior insights with real-time conversion models.",
+                analysis: "Spearheaded a multi-channel campaign. For <strong>Instagram</strong>, developed interactive polls, video snippets of performers, and on-the-day stories to generate visceral, System 1 interest. For <strong>X (Twitter)</strong>, drafted high-level, research-centric threads and peer-to-peer engagement, explicitly tagging Dundee, Edinburgh, and other partner UK institutions. For <strong>Email & Print</strong>, drafted target segment newsletter copy and deployed color-coded offline flyers at Fringe hubs to guide choices.",
+                parameters: {
+                    role: "Communications & Engagement Intern",
+                    client: "Edinburgh Research Office",
+                    duration: "Jun — Aug 2024"
+                },
+                metrics: [
+                    { label: "Direct Ticket Sales", value: "1,700+", desc: "Record ticket conversions in CoDI show history." },
+                    { label: "Audience Reach", value: "8,000+", desc: "Driven organically with zero paid search budget." },
+                    { label: "Engagement Uplift", value: "+20%", desc: "Incremental boost over historical averages." }
+                ],
+                customVisualHTML: `
+                    <!-- Custom Horizontal bar chart showing conversion rates across channels -->
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider font-sans">Multi-Channel Channel Tactics Performance</span>
+                        <div class="space-y-3 font-sans text-xs text-stone-700">
+                            <div>
+                                <div class="flex justify-between font-medium mb-1">
+                                    <span>Instagram: Interactive Stories & On-The-Day Clips</span>
+                                    <span class="text-emerald-800 font-bold">78% Engagement Rate</span>
+                                </div>
+                                <div class="w-full bg-stone-100 rounded-full h-2">
+                                    <div class="bg-emerald-700 h-2 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between font-medium mb-1">
+                                    <span>X (Twitter): Academic Research Threads</span>
+                                    <span class="text-emerald-800 font-bold">52% Engagement Rate</span>
+                                </div>
+                                <div class="w-full bg-stone-100 rounded-full h-2">
+                                    <div class="bg-emerald-600 h-2 rounded-full" style="width: 52%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between font-medium mb-1">
+                                    <span>Print (Fringe Hub flyers) & Mailchimp Newsletters</span>
+                                    <span class="text-stone-400 font-bold">24% Conversion Rate</span>
+                                </div>
+                                <div class="w-full bg-stone-100 rounded-full h-2">
+                                    <div class="bg-stone-300 h-2 rounded-full" style="width: 24%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'treasury': {
+                category: "B2B Tech Product Positioning & Paid Search Acquisition",
+                title: "Paid Media Strategy Framework & AI Product Positioning",
+                challenge: "Scaling sales conversions and qualified target pipeline signups for premium digital treasury advisory systems without wasting budget on low-intent generic financial keywords.",
+                insight: "C-level financial decision-makers search primarily for systemic risk mitigation, administrative efficiency, and processing speed rather than generic algorithmic capabilities.",
+                analysis: "Structured a detailed B2B target lead identification framework. Built optimized phrase and exact match ad groups, designed high-trust CRO landing page parameters, and constructed target lists.",
+                parameters: {
+                    role: "B2B Marketing Intern",
+                    client: "Your Treasury",
+                    duration: "Jan 2026 — Present"
+                },
+                metrics: [
+                    { label: "Pipeline Alignment", value: "100%", desc: "Achieved across technical developer roadmaps and target sales messaging." },
+                    { label: "Ad Target Groups", value: "2 Tiers", desc: "Segmented into Operational speed (CFO) and Capital Security (Treasurer)." },
+                    { label: "Target Conversions", value: "+45%", desc: "Projected via frictionless interactive ROI-calculator landing pages." }
+                ],
+                customVisualHTML: `
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-6">
+                        <div class="border-b border-stone-100 pb-3 flex justify-between items-center">
+                            <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span> Live PPC Strategy Blueprint & Lead Identification
+                            </span>
+                        </div>
+                        
+                        <!-- ICP Ad-Group Segmentation Matrix -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-200/60 space-y-2">
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block">Ad Set 1: High-Growth CFO (Operational Speed)</span>
+                                <p class="text-xs text-stone-700 font-serif font-bold">Copy: "Unlock Real-Time Cash Visibility & Automation"</p>
+                                <div class="pt-2 text-[10px] space-y-1 font-mono text-stone-500">
+                                    <div>• "automated treasury software" (Phrase)</div>
+                                    <div>• "real-time cash forecasting" (Phrase)</div>
+                                </div>
+                            </div>
+                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-200/60 space-y-2">
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block">Ad Set 2: Corporate Treasurer (Risk Mitigation)</span>
+                                <p class="text-xs text-stone-700 font-serif font-bold">Copy: "Secure Liquidity & Compliance Automatically"</p>
+                                <div class="pt-2 text-[10px] space-y-1 font-mono text-stone-500">
+                                    <div>• [liquidity risk software] (Exact)</div>
+                                    <div>• [enterprise treasury control] (Exact)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Landing Page CRO Blueprint -->
+                        <div class="border-t border-stone-100 pt-4 space-y-2">
+                            <span class="text-[10px] uppercase font-bold text-stone-400 block">CRO Landing Page Architecture Blueprint</span>
+                            <div class="bg-stone-900 text-stone-300 p-4 rounded-xl space-y-3 font-mono text-[10px] leading-relaxed">
+                                <div class="text-emerald-400 font-bold border-b border-stone-800 pb-1.5">[Hero Section: High-Clarity Gist Communication]</div>
+                                <div>• Headline: "Real-Time Enterprise Cash Management. Upgraded for Speed, Secured for Compliance."</div>
+                                <div>• CTA: "Analyze My Outbound Liquidity Flow (Interactive Calculator)"</div>
+                                <div>• Trust Anchors: "FCA Regulatory Safe Shield" | "ISO 27001 Data Security Certification"</div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'koru': {
+                category: "B2B Brand Positioning & Organic Growth",
+                title: "Scaling Organic Authority for Sustainable Fintech",
+                challenge: "Establishing trusted initial search presence and simplifying complex FCA regulatory anti-greenwashing rules for newly launched compliance funds.",
+                insight: "Transformed legal compliance requirements into highly accessible, visual 'connecting the dots' educational slides on LinkedIn, lowering barrier of entry trust metrics.",
+                analysis: "Led a step-by-step 0-to-1 launch. Audited top B2B competitors, established core messaging pillars, created unified graphic components using Canva, and streamlined content coordination using Trello sprint calendars.",
+                parameters: {
+                    role: "Brand Strategy Intern",
+                    client: "Koru Impact Solutions",
+                    duration: "Mar — May 2024"
+                },
+                metrics: [
+                    { label: "Organic Base Launch", value: "0 to 1", desc: "Constructed company social footprint from scratch." },
+                    { label: "Pipeline Alignment", value: "100%", desc: "Created transparent content flow using Trello sprint calendars." },
+                    { label: "High-Quality Network", value: "500+", desc: "Organic institutional fund manager followers secured." }
+                ],
+                customVisualHTML: `
+                    <!-- Timeline diagram tracking organic audience scaling milestones -->
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider font-sans">Organic Profile Scale Milestone (LinkedIn 0-to-1)</span>
+                        <div class="relative pl-6 border-l-2 border-emerald-700/30 space-y-4 font-sans text-xs text-stone-700">
+                            <div>
+                                <span class="font-bold text-stone-900 block">Weeks 1-2: Core Message Alignment & Competitor Audit</span>
+                                <span class="text-[11px] text-stone-500">Established content pillars on anti-greenwashing parameters. Deployed Trello sprint dashboard.</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-stone-900 block">Weeks 3-6: Content Launch Sprint</span>
+                                <span class="text-[11px] text-stone-500">Launched high-impact carousel explainers translating FCA regulations into B2B actions, gaining 300+ initial followers.</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-stone-900 block">Weeks 7-8: Success Verification & Iteration</span>
+                                <span class="text-[11px] text-stone-500 font-semibold text-emerald-800">Completed 0-to-1 launch milestone: reached 500+ organic high-quality institutional followers.</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'consulting': {
+                category: "Marketing Funnel & Inbound Optimization",
+                title: "Data-Driven Candidate Recruitment Campaigns",
+                challenge: "Sustaining quality applicant volumes for selective student consulting cohorts amidst highly cluttered university networks.",
+                insight: "Leveraged scarcity framing and high-status peer signaling, aligning promotional assets directly to prestigious post-grad career placement pathways.",
+                analysis: "Orchestrated the critical middle-two-weeks-of-September recruitment campaign. Scheduled digital teasers, physical flyering, lecture-theatre takeovers, and Mailchimp email automations.",
+                parameters: {
+                    role: "Marketing Director",
+                    client: "180 Degrees Consulting Edinburgh",
+                    duration: "Sep 2023 — May 2024"
+                },
+                metrics: [
+                    { label: "Active Applicants", value: "300+", desc: "Record applicant volume secured per campaign cycle." },
+                    { label: "Instagram Baseline", value: "+30%", desc: "Organic follower increase through aligned aesthetics." },
+                    { label: "Interactive CTR", value: "+80%", desc: "Uplift in engagement via personalized newsletter segmentation." }
+                ],
+                customVisualHTML: `
+                    <!-- Calendar breakdown of September Recruitment schedule -->
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider font-sans">September 2023 Recruitment Campaign Schedule</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-4 gap-2 font-sans text-xs text-stone-700 text-center">
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <span class="text-[9px] uppercase font-bold text-stone-400 block">Sep 1 - 7</span>
+                                <span class="font-semibold block py-1">Digital Teasers</span>
+                                <span class="text-[10px] text-stone-400">Alumni Spotlights & Social Board Posts</span>
+                            </div>
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <span class="text-[9px] uppercase font-bold text-stone-400 block">Sep 8 - 14</span>
+                                <span class="font-semibold block py-1">Physical Blitz</span>
+                                <span class="text-[10px] text-stone-500 font-medium">Library Flyering & Lecture Takeovers</span>
+                            </div>
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <span class="text-[9px] uppercase font-bold text-stone-400 block">Sep 15 - 21</span>
+                                <span class="font-semibold block py-1">In-Person Nudges</span>
+                                <span class="text-[10px] text-stone-400">Welcome Week Booths & BCG Case Promo</span>
+                            </div>
+                            <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                                <span class="text-[9px] uppercase font-bold text-emerald-800 block">Sep 22 - 29</span>
+                                <span class="font-semibold text-emerald-900 block py-1">Closing Scarcity</span>
+                                <span class="text-[10px] text-emerald-700">Mailchimp Newsletter & Final Countdown</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Structured Research Database
+        const researchDb = {
+            'ai': {
+                category: "Quantitative Data Modeling & Behavioral Trust Foundations",
+                title: "Mind Perception Mechanics in AI Product Trust Metrics",
+                framework: "University of Edinburgh Undergraduate Psychology Dissertation (First Class Honours — Outstanding Grade of 78%)",
+                methodology: "Formulated and ran empirical study examining how psychological mind attribution parameters (agency vs. experience dimensions) modulate public anxiety levels toward automation safety risks. Managed extensive outlier diagnostic checking in R.",
+                humanInsight: "Public safety concern and product trust levels towards AI technology are indexed heavily on perceived 'Agency' (the ability to act, plan, and intend) rather than perceived 'Experience' (the capacity to feel or adapt). High-agency product messaging triggers moral accountability mechanisms in the consumer's mind, inflating trust barriers.",
+                recommendations: [
+                    "Avoid High-Agency Autonomy Labels in Copy: Frame product features as analytical assistance modules.",
+                    "Establish Direct User-Input Visual Links: Build transparent interface loops linking specific user actions.",
+                    "Explicit Human-Override Assets: Prominently display real-time override dials in B2B brochures."
+                ],
+                customChartHTML: `
+                    <!-- Premium Visual Empirical Regression & Correlation Line Chart -->
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Figure 1: Empirical Diagnostics (Edinburgh Dissertation)</span>
+                                <span class="text-xs font-serif font-bold text-stone-900 block">Attributions of Mind vs. Concern for AI Safety (N=215)</span>
+                            </div>
+                            <span class="text-[9px] bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5 rounded font-mono">Preregistered Model</span>
+                        </div>
+
+                        <!-- Pure Tailwind SVG Coordinate Mapping Chart -->
+                        <div class="relative w-full border border-stone-200/60 rounded-xl p-4 bg-stone-50/50">
+                            <div class="flex">
+                                <!-- Y-Axis Indicators -->
+                                <div class="flex flex-col justify-between text-[9px] font-mono text-stone-400 pr-3 border-r border-stone-200 h-44">
+                                    <span>7</span>
+                                    <span>6</span>
+                                    <span>5</span>
+                                    <span>4</span>
+                                    <span>3</span>
+                                    <span>2</span>
+                                </div>
+
+                                <!-- Plot Area Container -->
+                                <div class="flex-grow relative h-44 ml-2 overflow-hidden">
+                                    <!-- Grid Background Lines -->
+                                    <div class="absolute inset-0 flex flex-col justify-between">
+                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                    </div>
+
+                                    <!-- Simulated Scattered Data Points for high ecological realism -->
+                                    <div class="absolute inset-0 pointer-events-none opacity-20">
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 15%; top: 30%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 25%; top: 25%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 35%; top: 40%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 45%; top: 45%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 55%; top: 32%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 65%; top: 50%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 75%; top: 60%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 20%; top: 55%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 40%; top: 15%;"></span>
+                                        
+                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 18%; top: 45%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 28%; top: 40%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 38%; top: 38%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 48%; top: 52%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 58%; top: 48%;"></span>
+                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 68%; top: 35%;"></span>
+                                    </div>
+
+                                    <!-- SVG Regression Lines mirroring the ggplot exact slopes -->
+                                    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                        <!-- Experience of Future AI (Light Blue Line - sloped upwards, ** sig) -->
+                                        <line x1="5" y1="58" x2="95" y2="42" stroke="#93c5fd" stroke-width="2.5" />
+                                        
+                                        <!-- Experience of Current AI (Deep Blue Line - flat) -->
+                                        <line x1="5" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="2 1" stroke-width="2.5" />
+                                        
+                                        <!-- Agency of Future AI (Light Red/Pink Line - slight downward slope) -->
+                                        <line x1="5" y1="45" x2="95" y2="52" stroke="#fca5a5" stroke-width="2.5" />
+
+                                        <!-- Agency of Current AI (Red Line - steep downward slope, *** sig) -->
+                                        <line x1="5" y1="32" x2="95" y2="65" stroke="#dc2626" stroke-width="3" />
+                                    </svg>
+
+                                    <!-- Text Labels directly embedded in plot coordinate map -->
+                                    <span class="absolute text-[8px] font-bold text-red-600" style="right: 2%; bottom: 26%;">Agency (Current) ***</span>
+                                    <span class="absolute text-[8px] font-bold text-blue-500" style="right: 2%; top: 32%;">Experience (Future) **</span>
+                                </div>
+                            </div>
+
+                            <!-- X-Axis Labels -->
+                            <div class="flex justify-between pl-6 mt-1 text-[9px] font-mono text-stone-400">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4 (Perception of Mind)</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                            </div>
+                            
+                            <!-- Legend indicators mirroring standard scientific papers -->
+                            <div class="mt-4 pt-3 border-t border-stone-200/60 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[9px] font-medium text-stone-600">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-0.5 bg-red-600 inline-block"></span>
+                                    <span>Agency of Current AI (***)</span>
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-0.5 bg-red-300 inline-block"></span>
+                                    <span>Agency of Future AI (n.s.)</span>
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-0.5 bg-blue-700 inline-block"></span>
+                                    <span>Experience of Current AI (n.s.)</span>
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-0.5 bg-blue-300 inline-block"></span>
+                                    <span>Experience of Future AI (**)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-[9px] text-stone-400 italic block mt-2">*Regression parameter diagnostics verified that as perception of agency in current systems grows, security concerns decline, whereas perceived future subjective experience capacities scale anxieties dramatically (p < 0.01). Residual normality, multi-collinearity (VIF &lt; 5), and homoscedasticity were comprehensively passed.</span>
+                    </div>
+                `
+            },
+            'guinness': {
+                category: "Consumer Behavioral Analysis & Mixed-Method Marketing Analytics",
+                title: "Deconstructing the Stout Beer Choice Engine",
+                framework: "MG4E9 LSE Marketing Analytics I (First Class Portfolio)",
+                methodology: "Developed and executed a comprehensive mixed-method consumer study combining exploratory qualitative interviews (N=5) and quantitative surveys (N=233) to measure consumption triggers.",
+                humanInsight: "While social and enhancement motivations act as strong drivers, conformity yielded a significant negative association. Consuming Guinness is perceived as a deliberate expression of individualistic preference rather than passive peer compliance.",
+                recommendations: [
+                    "Leverage 'Small-Win Moments' to frame Guinness as a rewarding ritual.",
+                    "Deploy 'Split the G' micro-challenges into localized digital referral filters.",
+                    "Calibrate cultural motifs directly toward tourist and recent arrived demographics."
+                ],
+                customChartHTML: `
+                    <div class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Motives Coefficients -->
+                            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Drinker Motives Regression Coefficients (R-Model Outcomes, N=233)</span>
+                                <div class="space-y-2.5 font-sans text-xs text-stone-700">
+                                    <div>
+                                        <div class="flex justify-between font-medium mb-1">
+                                            <span>Enhancement Motivation (elevate positive mood)</span>
+                                            <span class="text-emerald-800 font-bold">b = +0.54***</span>
+                                        </div>
+                                        <div class="w-full bg-stone-100 rounded-full h-2">
+                                            <div class="bg-emerald-600 h-2 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between font-medium mb-1">
+                                            <span>Coping Motivation (stress regulation / comfort)</span>
+                                            <span class="text-emerald-800 font-bold">b = +0.21***</span>
+                                        </div>
+                                        <div class="w-full bg-stone-100 rounded-full h-2">
+                                            <div class="bg-emerald-600 h-2 rounded-full" style="width: 48%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between font-medium mb-1">
+                                            <span>Social Motivation (group gatherings)</span>
+                                            <span class="text-emerald-800 font-bold">b = +0.12*</span>
+                                        </div>
+                                        <div class="w-full bg-stone-100 rounded-full h-2">
+                                            <div class="bg-emerald-500 h-2 rounded-full" style="width: 30%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between font-medium mb-1">
+                                            <span>Cultural Exploration Motivation (Irish identity / curiosity)</span>
+                                            <span class="text-emerald-800 font-bold font-mono">b = +0.03 (n.s.)</span>
+                                        </div>
+                                        <div class="w-full bg-stone-100 rounded-full h-2">
+                                            <div class="bg-emerald-300 h-2 rounded-full" style="width: 8%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between font-medium mb-1">
+                                            <span>Conformity Motivation (trying to fit in)</span>
+                                            <span class="text-rose-700 font-bold">b = -0.19***</span>
+                                        </div>
+                                        <div class="w-full bg-stone-100 rounded-full h-2">
+                                            <div class="bg-rose-500 h-2 rounded-full" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pure Tailwind Premium Boxplot Layout Mapping -->
+                            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Strength of Cultural Motivation for Consuming Guinness by UK Status</span>
+                                
+                                <div class="relative w-full border border-stone-200/60 rounded-xl p-4 bg-stone-50/50">
+                                    <!-- Y-Axis Labels & Grid Container -->
+                                    <div class="flex h-52">
+                                        <!-- Y Axis Indicators -->
+                                        <div class="flex flex-col justify-between text-[9px] font-mono text-stone-400 pr-3 border-r border-stone-200 h-40">
+                                            <span>7 - High</span>
+                                            <span>6</span>
+                                            <span>5</span>
+                                            <span>4</span>
+                                            <span>3</span>
+                                            <span>2</span>
+                                            <span>1 - Low</span>
+                                        </div>
+
+                                        <!-- Interactive Boxplot grid track container -->
+                                        <div class="flex-grow grid grid-cols-5 gap-2 px-2 relative h-40">
+                                            <!-- Column 1: Native/lifelong resident -->
+                                            <div class="relative h-full flex justify-center">
+                                                <!-- Whiskers line (1.0 to 5.5) -->
+                                                <div class="absolute w-[1px] bg-stone-400" style="bottom: 0%; top: 25%;"></div>
+                                                <!-- Cap Top -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="top: 25%;"></div>
+                                                <!-- Cap Bottom -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="bottom: 0%;"></div>
+                                                <!-- IQR Box (Q1: 2.4 to Q3: 3.8) -->
+                                                <div class="absolute w-6 border border-amber-600 bg-amber-200/70 rounded-[1px] flex flex-col justify-between" style="bottom: 23%; top: 53%;">
+                                                    <!-- Bold Median line (3.2) -->
+                                                    <div class="w-full h-1 bg-amber-900" style="margin-top: 35%;"></div>
+                                                </div>
+                                                <!-- Outlier at 6.2 -->
+                                                <div class="absolute w-1.5 h-1.5 rounded-full border border-stone-600 bg-white" style="top: 13%;"></div>
+                                            </div>
+
+                                            <!-- Column 2: Long-term resident -->
+                                            <div class="relative h-full flex justify-center">
+                                                <!-- Whiskers line (1.0 to 6.2) -->
+                                                <div class="absolute w-[1px] bg-stone-400" style="bottom: 0%; top: 13%;"></div>
+                                                <!-- Cap Top -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="top: 13%;"></div>
+                                                <!-- Cap Bottom -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="bottom: 0%;"></div>
+                                                <!-- IQR Box (Q1: 2.2 to Q3: 4.2) -->
+                                                <div class="absolute w-6 border border-amber-600 bg-amber-200/70 rounded-[1px] flex flex-col justify-between" style="bottom: 20%; top: 47%;">
+                                                    <!-- Bold Median line (3.0) -->
+                                                    <div class="w-full h-1 bg-amber-900" style="margin-top: 42%;"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Column 3: Recent resident -->
+                                            <div class="relative h-full flex justify-center">
+                                                <!-- Whiskers line (2.0 to 6.6) -->
+                                                <div class="absolute w-[1px] bg-stone-400" style="bottom: 17%; top: 6%;"></div>
+                                                <!-- Cap Top -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="top: 6%;"></div>
+                                                <!-- Cap Bottom -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="bottom: 17%;"></div>
+                                                <!-- IQR Box (Q1: 4.0 to Q3: 5.6) -->
+                                                <div class="absolute w-6 border border-amber-600 bg-amber-400 rounded-[1px]" style="bottom: 50%; top: 23%;">
+                                                    <!-- Bold Median line (5.2) -->
+                                                    <div class="w-full h-1 bg-amber-900" style="margin-top: 15%;"></div>
+                                                </div>
+                                                <!-- Outlier at 1.0 -->
+                                                <div class="absolute w-1.5 h-1.5 rounded-full border border-stone-600 bg-white" style="bottom: 0%;"></div>
+                                            </div>
+
+                                            <!-- Column 4: Visitor/tourist -->
+                                            <div class="relative h-full flex justify-center">
+                                                <!-- Whiskers line (2.0 to 5.8) -->
+                                                <div class="absolute w-[1px] bg-stone-400" style="bottom: 17%; top: 20%;"></div>
+                                                <!-- Cap Top -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="top: 20%;"></div>
+                                                <!-- Cap Bottom -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="bottom: 17%;"></div>
+                                                <!-- IQR Box (Q1: 3.5 to Q3: 5.2) -->
+                                                <div class="absolute w-6 border border-amber-600 bg-amber-400 rounded-[1px]" style="bottom: 42%; top: 30%;">
+                                                    <!-- Bold Median line (5.0) -->
+                                                    <div class="w-full h-1 bg-amber-900" style="margin-top: 5%;"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Column 5: Not living in the UK -->
+                                            <div class="relative h-full flex justify-center">
+                                                <!-- Whiskers line (2.6 to 4.2) -->
+                                                <div class="absolute w-[1px] bg-stone-400" style="bottom: 27%; top: 47%;"></div>
+                                                <!-- Cap Top -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="top: 47%;"></div>
+                                                <!-- Cap Bottom -->
+                                                <div class="absolute w-2 h-[1px] bg-stone-400" style="bottom: 27%;"></div>
+                                                <!-- IQR Box (Q1: 2.9 to Q3: 3.7) -->
+                                                <div class="absolute w-6 border border-amber-600 bg-amber-200/70 rounded-[1px]" style="bottom: 32%; top: 55%;">
+                                                    <!-- Bold Median line (3.2) -->
+                                                    <div class="w-full h-1 bg-amber-900" style="margin-top: 25%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- X-Axis Labels positioned precisely underneath -->
+                                    <div class="grid grid-cols-5 gap-2 px-2 mt-2 pt-2 border-t border-stone-200 text-center text-[8px] font-sans text-stone-500 font-medium">
+                                        <div class="leading-snug break-words">Native / Lifelong</div>
+                                        <div class="leading-snug break-words">Long-Term (5y+)</div>
+                                        <div class="leading-snug break-words">Recent (&lt;5y)</div>
+                                        <div class="leading-snug break-words">Visitor / Tourist</div>
+                                        <div class="leading-snug break-words">Not in UK</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-stone-400 italic leading-relaxed">
+                            *Qualitative & Quantitative Triangulation: Exploratory interviews mapped out a fifth distinct driver: Cultural Exploration (ties to Irish heritage, study abroad transitions, and Celtic fandoms). The subsequent boxplot diagnostics confirmed that Cultural motives are highly pronounced for recent international arrivals and transient tourists compared to long-term UK residents.
+                        </p>
+                    </div>
+                `
+            },
+            'netflix': {
+                category: "Consumer Neuroscience & Eye-Tracking Optimization",
+                title: "Biometric Diagnostics in Interface Visual Processing",
+                framework: "MG4J7 LSE Advanced Consumer Neuroscience Analysis",
+                methodology: "Mapped eye-tracking fixation variables using Netflix’s Aesthetic Visual Analysis (AVA) frameworks to evaluate sub-500ms selective gaze trajectories. Explored visual attention and emotional engagement patterns across face vs. non-face thumbnail conditions (N=25).",
+                humanInsight: "Thumbnail faces lock focus incredibly fast (H1a supported; TTFF on faces was significantly faster than non-faces, p = 0.0004). However, direct gaze matching can trigger instant sensory capture that paradoxically blinds consumers from discovering remaining options below. Immediate facial gaze did not significantly impact overall valence or emotional activation (H2 rejected), but did create a severe attention trade-off, restricting the depth of text-based information processing (H3 supported).",
+                recommendations: [
+                    "Deploy directed thumbnail eye orientations targeting structural CTA buttons.",
+                    "Optimize layout cadence to alternate contrast distributions and break scanning fatigue.",
+                    "Implement low-cognitive simplified graphics for late-night interface configurations."
+                ],
+                customChartHTML: `
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Observed Visual Area-of-Interest (AOI) Attention Mapping (N=25)</span>
+                        <div class="grid grid-cols-2 gap-4 text-center font-sans text-xs">
+                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-100">
+                                <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">With-Face Condition</span>
+                                <div class="text-xl font-bold text-stone-900 py-1">68% Dwell on Face</div>
+                                <span class="text-[10px] text-stone-400 block">Text cues largely missed or delayed by +1213ms (H3 Supported).</span>
+                            </div>
+                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-100">
+                                <span class="text-[9px] uppercase tracking-wider text-stone-400 block font-bold">No-Face Condition</span>
+                                <div class="text-xl font-bold text-emerald-800 py-1">2x Info Processing</div>
+                                <span class="text-[10px] text-emerald-700 block">Attention distributes evenly to title, caps & tags.</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'tfl': {
+                category: "Behavioral Economics & Choice Architecture",
+                title: "Nudging Perceptions Amid Transport Public Price Adjustments",
+                framework: "MG404 LSE Consumer Insights Policy Strategy Document",
+                methodology: "Diagnosed public sentiment metrics regarding the London Underground tariff updates to engineer transactional fairness framing architectures based on Organismic Integration Theory (OIT).",
+                humanInsight: "Consumers evaluate fare adjustments on transactional reciprocity, not operational costs. Public anger is not price sensitivity, but a perceived loss of autonomy and a feeling of manipulation (controlled motivation). Transitioning from external regulation to identified regulation via 'gist-communication' lowers public resentment.",
+                recommendations: [
+                    "Transition marketing copy toward localized community upgrade metrics.",
+                    "Deploy choice architecture variations giving users flexible peak reward parameters.",
+                    "Replace dense corporate statements with highly accessible single-focus visuals."
+                ],
+                customChartHTML: `
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-2">
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Fairness Delivery Flow (Self-Determination Theory)</span>
+                        <p class="text-xs text-emerald-800 font-medium">Acknowledge Constraint ➔ Reciprocity Context ➔ Value Realization (Identified Regulation)</p>
+                    </div>
+                `
+            },
+            'ppc': {
+                category: "Performance-Based Growth Optimization & Budget Attribution",
+                title: "Data-Driven Budget Allocation & ROAS Optimization",
+                framework: "MG4F3 LSE Digital Strategy Simulation Analysis",
+                methodology: "Managed cross-channel search, shopping, and retargeting simulation bids across performance cycles (\$15k initial budget).",
+                humanInsight: "Strict adherence to traditional funnel-based budget models (spending heavily on interest-based display prior to high-intent search) produces substantial budget waste when audience retargeting pools are constrained.",
+                recommendations: [
+                    "Allocate initial budgets strictly into high-intent search variations to secure baseline pipeline goals.",
+                    "Run negative query filters daily to keep ad relevance high and CPA down.",
+                    "Implement agile budgeting models that reallocate display budgets into high-performing search targets instantly based on live data."
+                ],
+                customChartHTML: `
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Attributed ROAS Performance across Ad Channels</span>
+                        <div class="space-y-3 font-sans text-xs text-stone-700">
+                            <div>
+                                <div class="flex justify-between font-medium mb-1">
+                                    <span>High-Intent Google Search Ads</span>
+                                    <span class="text-emerald-800 font-bold">ROAS: 4.48 ($5,400 allocated)</span>
+                                </div>
+                                <div class="w-full bg-stone-100 rounded-full h-2.5">
+                                    <div class="bg-emerald-700 h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between font-medium mb-1">
+                                    <span>Product Shopping Ads</span>
+                                    <span class="text-emerald-800 font-bold">ROAS: 3.26 ($4,350 allocated)</span>
+                                </div>
+                                <div class="w-full bg-stone-100 rounded-full h-2.5">
+                                    <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Render Work Experience Sub-Tab Card
+        function renderWorkExperience() {
+            const data = workDb[activeWorkSubTab];
+            const target = document.getElementById('work-experience-content');
+            if (!target) return;
+
+            target.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold tracking-widest uppercase text-emerald-800 block">${data.category}</span>
+                            <h3 class="text-2xl md:text-3xl font-serif font-bold text-stone-900 leading-tight">${data.title}</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-stone-200 pt-6">
+                            <div class="space-y-2">
+                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">The Business Problem</h4>
+                                <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.challenge}</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Psychology-Backed Insight</h4>
+                                <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.insight}</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4 border-t border-stone-200 pt-6">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Analytical Methodology</h4>
+                            <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.analysis}</p>
+                        </div>
+                        <div class="pt-4">${data.customVisualHTML}</div>
+                    </div>
+
+                    <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
+                        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4 font-sans">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block pb-2 border-b border-stone-100">Project Parameters</span>
+                            <div class="space-y-3 text-xs">
+                                <div><span class="text-[10px] text-stone-400 block">Role</span><span class="font-semibold text-stone-800">${data.parameters.role}</span></div>
+                                <div><span class="text-[10px] text-stone-400 block">Client</span><span class="font-semibold text-stone-800">${data.parameters.client}</span></div>
+                                <div><span class="text-[10px] text-stone-400 block">Duration</span><span class="font-semibold text-stone-800">${data.parameters.duration}</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block border-b border-stone-800 pb-2">Quantitative Outcomes</span>
+                            <div class="space-y-4">
+                                ${data.metrics.map(m => `
+                                    <div class="space-y-1">
+                                        <span class="text-[10px] text-stone-400 block uppercase">${m.label}</span>
+                                        <div class="text-2xl font-serif font-bold text-emerald-400">${m.value}</div>
+                                        <p class="text-[11px] text-stone-400">${m.desc}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+        }
+
+        // Render Academic Research Reports Sub-Tab Card
+        function renderResearchReport() {
+            const data = researchDb[activeResearchSubTab];
+            const target = document.getElementById('research-report-content');
+            if (!target) return;
+
+            target.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold tracking-widest uppercase text-emerald-800 block">${data.category}</span>
+                            <h3 class="text-2xl md:text-3xl font-serif font-bold text-stone-900 leading-tight">${data.title}</h3>
+                            <span class="text-xs font-medium italic text-stone-400 block pt-1">${data.framework}</span>
+                        </div>
+                        <div class="border-t border-stone-200 pt-4 space-y-2">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Methodology & Empirical Context</h4>
+                            <p class="text-sm text-stone-600 leading-relaxed">${data.methodology}</p>
+                        </div>
+                        <div class="border-t border-stone-200 pt-4 space-y-2">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
+                            <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
+                        </div>
+                        <div class="pt-2">${data.customChartHTML}</div>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                        <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400 border-b border-stone-100 pb-2 flex items-center gap-2">
+                            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-700"></i> Strategic Recommendations
+                        </h4>
+                        <ul class="space-y-4 text-xs text-stone-600 font-sans leading-relaxed">
+                            ${data.recommendations.map(rec => `
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-emerald-700 font-bold">▪</span>
+                                    <span>${rec}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+        }
+
+        // Switch Global View Tabs
+        function switchGlobalTab(tabName) {
+            activeGlobalTab = tabName;
+            
+            const sections = ['about', 'work', 'research'];
+            sections.forEach(sec => {
+                const el = document.getElementById(`section-${sec}`);
+                const btn = document.getElementById(`nav-${sec}`);
+                if (sec === tabName) {
+                    el.classList.remove('hidden');
+                    btn.className = "px-4 py-2 rounded-lg text-xs font-semibold tab-transition bg-white text-stone-950 shadow-sm";
+                } else {
+                    el.classList.add('hidden');
+                    btn.className = "px-4 py-2 rounded-lg text-xs font-semibold tab-transition text-stone-500 hover:text-stone-900";
+                }
+            });
+
+            if (tabName === 'research') {
+                renderResearchReport();
+            } else if (tabName === 'work') {
+                renderWorkExperience();
+            }
+        }
+
+        // Switch Research Sub-Tabs
+        function switchResearchSubTab(subTabKey) {
+            activeResearchSubTab = subTabKey;
+            
+            const subTabs = ['ai', 'guinness', 'netflix', 'tfl', 'ppc'];
+            subTabs.forEach(key => {
+                const btn = document.getElementById(`res-tab-${key}`);
+                if (key === subTabKey) {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-900 text-white shadow-sm";
+                } else {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200";
+                }
+            });
+
+            renderResearchReport();
+        }
+
+        // Switch Work Experience Sub-Tabs
+        function switchWorkSubTab(subTabKey) {
+            activeWorkSubTab = subTabKey;
+            
+            const subTabs = ['fringe', 'treasury', 'koru', 'consulting'];
+            subTabs.forEach(key => {
+                const btn = document.getElementById(`work-tab-${key}`);
+                if (key === subTabKey) {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-900 text-white shadow-sm";
+                } else {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200";
+                }
+            });
+
+            renderWorkExperience();
+        }
+
+        // Initialize script components on layout ready
+        window.onload = function () {
+            lucide.createIcons();
+            renderResearchReport();
+            renderWorkExperience();
+        }
+    </script>
+</body>
+</html>
