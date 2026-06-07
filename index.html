@@ -583,6 +583,7 @@ customVisualHTML: `
                 title: "Mind Perception Mechanics in AI Product Trust Metrics",
                 framework: "University of Edinburgh Undergraduate Psychology Dissertation (First Class 78%)",
                 methodology: "Formulated and ran empirical study examining how psychological mind attribution parameters (agency vs. experience dimensions) modulate public anxiety levels toward automation safety risks. Managed extensive outlier diagnostic checking in R.",
+                results: "The model was statistically significant (F(13,201) = 2.99, p &lt; .001), explaining 16.2% of variance in AI safety concern (R² = .162). Agency in current AI significantly predicted <em>lower</em> concern (β = −0.34, p = .001) — contrary to H1a. Experience in future AI significantly predicted <em>higher</em> concern (β = +0.19, p = .003), supporting H2b. Neither agency in future AI nor experience in current AI reached significance.",
                 humanInsight: "Public safety concern and product trust levels towards AI technology are indexed heavily on perceived 'Agency' (the ability to act, plan, and intend) rather than perceived 'Experience' (the capacity to feel or adapt). High-agency product messaging triggers moral accountability mechanisms in the consumer's mind, inflating trust barriers.",
                 recommendations: [
                     "Avoid High-Agency Autonomy Labels in Copy: Frame product features as analytical assistance modules.",
@@ -590,116 +591,195 @@ customVisualHTML: `
                     "Explicit Human-Override Assets: Prominently display real-time override dials in B2B brochures."
                 ],
                 customChartHTML: `
-                    <!-- Premium Visual Empirical Regression & Correlation Line Chart -->
-                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Figure 1: Empirical Diagnostics (Edinburgh Dissertation)</span>
-                                <span class="text-xs font-serif font-bold text-stone-900 block">Attributions of Mind vs. Concern for AI Safety (N=215)</span>
-                            </div>
-                            <span class="text-[9px] bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5 rounded font-mono">Preregistered Model</span>
-                        </div>
-
-                        <!-- Pure Tailwind SVG Coordinate Mapping Chart -->
-                        <div class="relative w-full border border-stone-200/60 rounded-xl p-4 bg-stone-50/50">
-                            <div class="flex">
-                                <!-- Y-Axis Indicators -->
-                                <div class="flex flex-col justify-between text-[9px] font-mono text-stone-400 pr-3 border-r border-stone-200 h-44">
-                                    <span>7</span>
-                                    <span>6</span>
-                                    <span>5</span>
-                                    <span>4</span>
-                                    <span>3</span>
-                                    <span>2</span>
-                                </div>
-
-                                <!-- Plot Area Container -->
-                                <div class="flex-grow relative h-44 ml-2 overflow-hidden">
-                                    <!-- Grid Background Lines -->
-                                    <div class="absolute inset-0 flex flex-col justify-between">
-                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                        <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                    </div>
-
-                                    <!-- Simulated Scattered Data Points for high ecological realism -->
-                                    <div class="absolute inset-0 pointer-events-none opacity-20">
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 15%; top: 30%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 25%; top: 25%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 35%; top: 40%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 45%; top: 45%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 55%; top: 32%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 65%; top: 50%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 75%; top: 60%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 20%; top: 55%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 40%; top: 15%;"></span>
-                                        
-                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 18%; top: 45%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 28%; top: 40%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 38%; top: 38%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 48%; top: 52%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 58%; top: 48%;"></span>
-                                        <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 68%; top: 35%;"></span>
-                                    </div>
-
-                                    <!-- SVG Regression Lines mirroring the ggplot exact slopes -->
-                                    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                                        <!-- Experience of Future AI (Light Blue Line - sloped upwards, ** sig) -->
-                                        <line x1="5" y1="58" x2="95" y2="42" stroke="#93c5fd" stroke-width="2.5" />
-                                        
-                                        <!-- Experience of Current AI (Deep Blue Line - flat) -->
-                                        <line x1="5" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="2 1" stroke-width="2.5" />
-                                        
-                                        <!-- Agency of Future AI (Light Red/Pink Line - slight downward slope) -->
-                                        <line x1="5" y1="45" x2="95" y2="52" stroke="#fca5a5" stroke-width="2.5" />
-
-                                        <!-- Agency of Current AI (Red Line - steep downward slope, *** sig) -->
-                                        <line x1="5" y1="32" x2="95" y2="65" stroke="#dc2626" stroke-width="3" />
-                                    </svg>
-
-                                    <!-- Text Labels directly embedded in plot coordinate map -->
-                                    <span class="absolute text-[8px] font-bold text-red-600" style="right: 2%; bottom: 26%;">Agency (Current) ***</span>
-                                    <span class="absolute text-[8px] font-bold text-blue-500" style="right: 2%; top: 32%;">Experience (Future) **</span>
-                                </div>
-                            </div>
-
-                            <!-- X-Axis Labels -->
-                            <div class="flex justify-between pl-6 mt-1 text-[9px] font-mono text-stone-400">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4 (Perception of Mind)</span>
-                                <span>5</span>
-                                <span>6</span>
-                                <span>7</span>
-                            </div>
-                            
-                            <!-- Legend indicators mirroring standard scientific papers -->
-                            <div class="mt-4 pt-3 border-t border-stone-200/60 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[9px] font-medium text-stone-600">
-                                <div class="flex items-center gap-1.5">
-                                    <span class="w-3 h-0.5 bg-red-600 inline-block"></span>
-                                    <span>Agency of Current AI (***)</span>
-                                </div>
-                                <div class="flex items-center gap-1.5">
-                                    <span class="w-3 h-0.5 bg-red-300 inline-block"></span>
-                                    <span>Agency of Future AI (n.s.)</span>
-                                </div>
-                                <div class="flex items-center gap-1.5">
-                                    <span class="w-3 h-0.5 bg-blue-700 inline-block"></span>
-                                    <span>Experience of Current AI (n.s.)</span>
-                                </div>
-                                <div class="flex items-center gap-1.5">
-                                    <span class="w-3 h-0.5 bg-blue-300 inline-block"></span>
-                                    <span>Experience of Future AI (**)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="text-[9px] text-stone-400 italic block mt-2">*Regression parameter diagnostics verified that as perception of agency in current systems grows, security concerns decline, whereas perceived future subjective experience capacities scale anxieties dramatically (p < 0.01). Residual normality, multi-collinearity (VIF &lt; 5), and homoscedasticity were comprehensively passed.</span>
+    <div class="space-y-6">
+        <!-- Results Block -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+            <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Key Results — Multiple Linear Regression</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-stone-50 p-4 rounded-xl border border-stone-100 space-y-3">
+                    <span class="text-[10px] uppercase font-bold text-stone-400 block">Model Fit</span>
+                    <div class="space-y-1.5 text-[11px] text-stone-600">
+                        <div class="flex justify-between"><span>F(13, 201)</span><span class="font-semibold text-stone-800">2.99, p &lt; .001</span></div>
+                        <div class="flex justify-between"><span>R²</span><span class="font-semibold text-stone-800">.162 (16.2% variance explained)</span></div>
+                        <div class="flex justify-between"><span>Adjusted R²</span><span class="font-semibold text-stone-800">.108</span></div>
                     </div>
-                `
+                </div>
+                <div class="bg-stone-50 p-4 rounded-xl border border-stone-100 space-y-3">
+                    <span class="text-[10px] uppercase font-bold text-stone-400 block">Significant Predictors</span>
+                    <div class="space-y-1.5 text-[11px] text-stone-600">
+                        <div class="flex justify-between items-start gap-2">
+                            <span>Agency (Current AI)</span>
+                            <span class="font-semibold text-rose-600 shrink-0">β = −0.34, p = .001</span>
+                        </div>
+                        <div class="flex justify-between items-start gap-2">
+                            <span>Experience (Future AI)</span>
+                            <span class="font-semibold text-emerald-700 shrink-0">β = +0.19, p = .003</span>
+                        </div>
+                        <div class="flex justify-between items-start gap-2">
+                            <span>Agency (Future AI)</span>
+                            <span class="font-semibold text-stone-400 shrink-0">β = 0.08, n.s.</span>
+                        </div>
+                        <div class="flex justify-between items-start gap-2">
+                            <span>Experience (Current AI)</span>
+                            <span class="font-semibold text-stone-400 shrink-0">β = −0.13, n.s.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart + Table side by side -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Regression Line Chart -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-3">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Figure 1: Empirical Diagnostics</span>
+                        <span class="text-xs font-serif font-bold text-stone-900 block">Attributions of Mind vs. Concern for AI Safety (N=215)</span>
+                    </div>
+                    <span class="text-[9px] bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5 rounded font-mono shrink-0">Preregistered</span>
+                </div>
+                <div class="relative w-full border border-stone-200/60 rounded-xl p-4 bg-stone-50/50">
+                    <div class="flex gap-2">
+                        <!-- Y axis title rotated -->
+                        <div class="flex items-center justify-center" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+                            <span class="text-[8px] font-sans text-stone-400 tracking-wide">Concern for AI Safety</span>
+                        </div>
+                        <div class="flex gap-1">
+                            <!-- Y axis numbers -->
+                            <div class="flex flex-col justify-between text-[9px] font-mono text-stone-400 pr-2 border-r border-stone-200 h-40">
+                                <span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span>
+                            </div>
+                            <!-- Plot area -->
+                            <div class="flex-grow relative h-40 ml-1 overflow-hidden">
+                                <div class="absolute inset-0 flex flex-col justify-between">
+                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
+                                </div>
+                                <div class="absolute inset-0 pointer-events-none opacity-20">
+                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 15%; top: 30%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 25%; top: 25%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 35%; top: 40%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 45%; top: 45%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 55%; top: 32%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 65%; top: 50%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 18%; top: 45%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 38%; top: 38%;"></span>
+                                    <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 58%; top: 48%;"></span>
+                                </div>
+                                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <line x1="5" y1="58" x2="95" y2="42" stroke="#93c5fd" stroke-width="2.5" />
+                                    <line x1="5" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="2 1" stroke-width="2.5" />
+                                    <line x1="5" y1="45" x2="95" y2="52" stroke="#fca5a5" stroke-width="2.5" />
+                                    <line x1="5" y1="32" x2="95" y2="65" stroke="#dc2626" stroke-width="3" />
+                                </svg>
+                                <span class="absolute text-[8px] font-bold text-red-600" style="right: 2%; bottom: 26%;">Agency (Current) ***</span>
+                                <span class="absolute text-[8px] font-bold text-blue-500" style="right: 2%; top: 32%;">Experience (Future) **</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between pl-10 mt-1 text-[9px] font-mono text-stone-400">
+                        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+                    </div>
+                    <div class="text-center mt-1">
+                        <span class="text-[8px] font-sans text-stone-400">Perception of Mind Dimension</span>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-stone-200/60 grid grid-cols-2 gap-1.5 text-[9px] font-medium text-stone-600">
+                        <div class="flex items-center gap-1.5"><span class="w-3 h-0.5 bg-red-600 inline-block"></span><span>Agency — Current AI (***)</span></div>
+                        <div class="flex items-center gap-1.5"><span class="w-3 h-0.5 bg-red-300 inline-block"></span><span>Agency — Future AI (n.s.)</span></div>
+                        <div class="flex items-center gap-1.5"><span class="w-3 h-0.5 bg-blue-700 inline-block"></span><span>Experience — Current AI (n.s.)</span></div>
+                        <div class="flex items-center gap-1.5"><span class="w-3 h-0.5 bg-blue-300 inline-block"></span><span>Experience — Future AI (**)</span></div>
+                    </div>
+                </div>
+                <p class="text-[9px] text-stone-400 italic leading-relaxed">Higher agency perception in current AI predicts lower safety concern (β = −0.34, p = .001). Perceived future experience scales concern upward (β = +0.19, p = .003).</p>
+            </div>
+
+            <!-- Descriptive Statistics Table -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-3">
+                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Descriptive Statistics — Independent & Dependent Variables</span>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-[11px] font-sans text-stone-600 border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-stone-300">
+                                <th class="text-left py-2 pr-3 font-semibold text-stone-700">Variable</th>
+                                <th class="text-center py-2 px-2 font-semibold text-stone-700" colspan="3">Current</th>
+                                <th class="text-center py-2 px-2 font-semibold text-stone-700" colspan="3">Future</th>
+                            </tr>
+                            <tr class="border-b border-stone-200 text-[10px] text-stone-400">
+                                <th class="text-left py-1 pr-3"></th>
+                                <th class="text-center py-1 px-2">Mean</th>
+                                <th class="text-center py-1 px-2">SD</th>
+                                <th class="text-center py-1 px-2">Range</th>
+                                <th class="text-center py-1 px-2">Mean</th>
+                                <th class="text-center py-1 px-2">SD</th>
+                                <th class="text-center py-1 px-2">Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-stone-100">
+                                <td class="py-2 pr-3 font-semibold text-stone-800">Agency</td>
+                                <td class="text-center py-2 px-2">4.56</td>
+                                <td class="text-center py-2 px-2">1.03</td>
+                                <td class="text-center py-2 px-2">1–6.8</td>
+                                <td class="text-center py-2 px-2">5.41</td>
+                                <td class="text-center py-2 px-2">1.10</td>
+                                <td class="text-center py-2 px-2">1–7</td>
+                            </tr>
+                            <tr class="border-b border-stone-200">
+                                <td class="py-2 pr-3 font-semibold text-stone-800">Experience</td>
+                                <td class="text-center py-2 px-2">2.13</td>
+                                <td class="text-center py-2 px-2">1.13</td>
+                                <td class="text-center py-2 px-2">1–5.4</td>
+                                <td class="text-center py-2 px-2">3.01</td>
+                                <td class="text-center py-2 px-2">1.57</td>
+                                <td class="text-center py-2 px-2">1–7</td>
+                            </tr>
+                            <tr class="border-b border-stone-100 bg-stone-50/50">
+                                <td class="py-2 pr-3 font-semibold text-stone-500 text-[10px] uppercase tracking-wide" colspan="7">Dependent Variable</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 pr-3 font-semibold text-stone-800">AI Safety Concern</td>
+                                <td class="text-center py-2 px-2 text-stone-300">—</td>
+                                <td class="text-center py-2 px-2 text-stone-300">—</td>
+                                <td class="text-center py-2 px-2 text-stone-300">—</td>
+                                <td class="text-center py-2 px-2">5.2</td>
+                                <td class="text-center py-2 px-2">1.02</td>
+                                <td class="text-center py-2 px-2">2.2–7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-[9px] text-stone-400 italic mt-2">Note. SD = standard deviation. Max range 1–7.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Recommendations -->
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+            <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
+            </div>
+            <div class="space-y-4">
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Avoid high-agency autonomy labels in copy.</span> Frame AI product features as analytical assistance modules rather than autonomous decision-makers — reducing moral accountability triggers.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Establish direct user-input visual links.</span> Build transparent interface loops that visibly connect specific user actions to system outputs — preserving perceived control.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Prominently display human-override assets.</span> Real-time override controls in B2B materials signal accountability and reduce the perceived experiential threat of future AI systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
             },
             'guinness': {
                 category: "Consumer Behavioral Analysis & Mixed-Method Marketing Analytics",
@@ -1135,10 +1215,37 @@ customVisualHTML: `
                             <h3 class="text-2xl md:text-3xl font-serif font-bold text-stone-900 leading-tight">${data.title}</h3>
                             <span class="text-xs font-medium italic text-stone-400 block pt-1">${data.framework}</span>
                         </div>
-                        <div class="border-t border-stone-200 pt-4 space-y-2">
+                                                <div class="border-t border-stone-200 pt-4 space-y-2">
                             <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Methodology & Empirical Context</h4>
                             <p class="text-sm text-stone-600 leading-relaxed">${data.methodology}</p>
                         </div>
+                        ${data.results ? `
+                        <div class="border-t border-stone-200 pt-4 space-y-4">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
+                            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Trust Barrier Index — Agency vs. Experience Perception</span>
+                                <div class="space-y-3 font-sans text-xs text-stone-600">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-28 text-right text-[11px] shrink-0">AI Agency</span>
+                                        <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-[#C0533A] h-3 rounded-full" style="width: 85%"></div></div>
+                                        <span class="text-[#C0533A] font-bold w-16 shrink-0">High β</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-28 text-right text-[11px] shrink-0">AI Experience</span>
+                                        <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-emerald-600 h-3 rounded-full" style="width: 35%"></div></div>
+                                        <span class="text-emerald-700 font-bold w-16 shrink-0">Low β</span>
+                                    </div>
+                                </div>
+                                <p class="text-[11px] text-stone-400 italic">Perceived Agency drives safety concern significantly more than Experience attribution.</p>
+                            </div>
+                            <div class="border-l-4 border-emerald-600 pl-4 py-2">
+                                <p class="text-sm italic text-stone-600 leading-relaxed">"Consumers treat high-agency AI as an autonomous moral entity — not a mechanical tool. This shifts risk anxiety entirely: it's not about what the AI feels, but about what it might decide."</p>
+                            </div>
+                            <div class="bg-stone-50 p-5 rounded-2xl border border-stone-200/60 space-y-3 font-sans text-xs text-stone-600 leading-relaxed">
+                                <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Model Results</span>
+                                <p>${data.results}</p>
+                            </div>
+                        </div>` : ''}
                         <div class="border-t border-stone-200 pt-4 space-y-2">
                             <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
                             <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
