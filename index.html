@@ -354,44 +354,60 @@
 ],
                 metrics: [
                     { label: "Direct Ticket Sales", value: "1,700+", desc: "Record ticket conversions in CoDI show history." },
-                    { label: "Audience Reach on Social Media", value: "8,000+", desc: "Driven organically with sero paid search budget." },
+                    { label: "Audience Reach on Social Media", value: "8,000+", desc: "Driven organically with zero paid search budget." },
                     { label: "Engagement Uplift", value: "+20%", desc: "Increase across Q&A participation, audience comments, and next-cycle show sign-ups." }
                 ],
-                customVisualHTML: `
-                    <!-- Custom Horisontal bar chart showing conversion rates across channels -->
-                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-                        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider font-sans">Multi-Channel Channel Tactics Performance</span>
-                        <div class="space-y-3 font-sans text-xs text-stone-700">
-                            <div>
-                                <div class="flex justify-between font-medium mb-1">
-                                    <span>Instagram: Interactive Stories & On-The-Day Clips</span>
-                                    <span class="text-emerald-800 font-bold">78% Engagement Rate</span>
-                                </div>
-                                <div class="w-full bg-stone-100 rounded-full h-2">
-                                    <div class="bg-emerald-700 h-2 rounded-full" style="width: 78%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between font-medium mb-1">
-                                    <span>X (Twitter): Academic Research Threads</span>
-                                    <span class="text-emerald-800 font-bold">52% Engagement Rate</span>
-                                </div>
-                                <div class="w-full bg-stone-100 rounded-full h-2">
-                                    <div class="bg-emerald-600 h-2 rounded-full" style="width: 52%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between font-medium mb-1">
-                                    <span>Print (Fringe Hub flyers) & Mailchimp Newsletters</span>
-                                    <span class="text-stone-400 font-bold">24% Conversion Rate</span>
-                                </div>
-                                <div class="w-full bg-stone-100 rounded-full h-2">
-                                    <div class="bg-stone-300 h-2 rounded-full" style="width: 24%"></div>
-                                </div>
-                            </div>
-                        </div>
+customVisualHTML: `
+    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+        <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Channel Strategy & Content Format Breakdown</span>
+        <div class="space-y-3">
+            <div class="bg-stone-50 p-4 rounded-xl border border-stone-200/60 space-y-1.5">
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="bg-pink-50 text-pink-700 p-1.5 rounded-lg"><i data-lucide="instagram" class="w-3.5 h-3.5"></i></div>
+                    <span class="text-xs font-bold text-stone-800">Instagram — Visual & Emotional Engagement</span>
+                </div>
+                <p class="text-[11px] text-stone-600 leading-relaxed">Multi-format approach combining interactive Stories (polls, countdowns, Q&As) to drive real-time participation, short-form Reels to capture passive scrollers, and behind-the-scenes content to humanise the researchers. Strong performance with student and young professional audiences seeking experiential, curiosity-driven content.</p>
+            </div>
+            <div class="bg-stone-50 p-4 rounded-xl border border-stone-200/60 space-y-1.5">
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="bg-stone-100 text-stone-700 p-1.5 rounded-lg"><i data-lucide="twitter" class="w-3.5 h-3.5"></i></div>
+                    <span class="text-xs font-bold text-stone-800">X (Twitter) — Academic & Institutional Reach</span>
+                </div>
+                <p class="text-[11px] text-stone-600 leading-relaxed">Professional-tone threads framing research as public discourse, tagging partner universities (Edinburgh, Dundee, St Andrews) to amplify institutional reach. Forum-style engagement with academics, researchers, and policy-adjacent audiences. Effective for building credibility and driving niche, high-intent traffic to show listings.</p>
+            </div>
+            <div class="bg-stone-50 p-4 rounded-xl border border-stone-200/60 space-y-1.5">
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="bg-blue-50 text-blue-700 p-1.5 rounded-lg"><i data-lucide="users" class="w-3.5 h-3.5"></i></div>
+                    <span class="text-xs font-bold text-stone-800">Facebook — Community & Local Audience</span>
+                </div>
+                <p class="text-[11px] text-stone-600 leading-relaxed">Leveraged local Edinburgh community groups and university alumni networks to reach older, non-student demographics. Event listings and community posts drove organic word-of-mouth among Fringe regulars and culturally engaged locals who may not be active on newer platforms.</p>
+            </div>
+            <div class="bg-stone-50 p-4 rounded-xl border border-stone-200/60 space-y-1.5">
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="bg-red-50 text-red-600 p-1.5 rounded-lg"><i data-lucide="video" class="w-3.5 h-3.5"></i></div>
+                    <span class="text-xs font-bold text-stone-800">TikTok — Trend-Led Discovery</span>
+                </div>
+                <p class="text-[11px] text-stone-600 leading-relaxed">Short-form video content tapping into trending audio and "did you know" educational formats to surface surprising research findings to a younger, algorithmically-driven audience. Designed for top-of-funnel awareness rather than direct conversion — capturing curiosity and directing viewers to Instagram or ticket links.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100 space-y-1.5">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="bg-emerald-100 text-emerald-700 p-1.5 rounded-lg"><i data-lucide="mail" class="w-3.5 h-3.5"></i></div>
+                        <span class="text-xs font-bold text-stone-800">Email — Targeted Conversion</span>
                     </div>
-                `
+                    <p class="text-[11px] text-stone-600 leading-relaxed">Segmented Mailchimp newsletters tailored to university staff, past attendees, and Fringe regulars. Higher intent audience; copy focused on show previews, researcher profiles, and direct ticket CTAs to drive bottom-funnel conversions.</p>
+                </div>
+                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100 space-y-1.5">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="bg-emerald-100 text-emerald-700 p-1.5 rounded-lg"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i></div>
+                        <span class="text-xs font-bold text-stone-800">Print & OOH — Ambient Awareness</span>
+                    </div>
+                    <p class="text-[11px] text-stone-600 leading-relaxed">Colour-coded posters distributed across Fringe hubs, cafés, bookshops, and university noticeboards. Designed to reduce choice overload by visually categorising shows by theme, making spontaneous decision-making easier for festival-goers already on the ground.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`,
             },
             'treasury': {
                 category: "B2B Tech Product Positioning & Paid Search Acquisition",
