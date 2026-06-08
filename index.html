@@ -699,7 +699,8 @@ customVisualHTML: `
                 </div>
             </div>
         </div>
-        
+
+                <!--HUMAN_INSIGHT-->
                 <!-- Brand Recommendations -->
         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
@@ -737,7 +738,8 @@ customVisualHTML: `
                     "Calibrate cultural motifs directly toward tourist and recent arrived demographics."
                 ],
                 customChartHTML: `
-                    <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Motives Coefficients -->
                             <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
@@ -907,6 +909,8 @@ customVisualHTML: `
                             *Qualitative & Quantitative Triangulation: Exploratory interviews mapped out a fifth distinct driver: Cultural Exploration (ties to Irish heritage, study abroad transitions, and Celtic fandoms). The subsequent boxplot diagnostics confirmed that Cultural motives are highly pronounced for recent international arrivals and transient tourists compared to long-term UK residents.
                         </p>
                     </div>
+                    
+                    <!--HUMAN_INSIGHT-->
                         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
@@ -942,7 +946,8 @@ customVisualHTML: `
                     "Implement low-cognitive simplified graphics for late-night interface configurations."
                 ],
                 customChartHTML: `
-    <div class="space-y-6">
+     <div class="space-y-6">
+        <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
         <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
             <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Attention Allocation by Thumbnail Type</span>
             <div class="space-y-3 font-sans text-xs text-stone-600">
@@ -971,6 +976,7 @@ customVisualHTML: `
         <div class="border-l-4 border-emerald-600 pl-4 py-2">
             <p class="text-sm italic text-stone-600 leading-relaxed">"Users make content decisions within 500ms of gaze — but direct outward eye contact halts vertical scroll traversal. The face captures attention, but the wrong gaze direction stops the browsing momentum."</p>
         </div>
+        <!--HUMAN_INSIGHT-->
         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
@@ -1007,6 +1013,7 @@ customVisualHTML: `
                 ],
                 customChartHTML: `
     <div class="space-y-6">
+        <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
         <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
             <span class="text-[10px] uppercase font-bold text-stone-400 block tracking-wider">Where Public Resistance Originates</span>
             <div class="space-y-2">
@@ -1024,6 +1031,8 @@ customVisualHTML: `
         <div class="border-l-4 border-emerald-600 pl-4 py-2">
             <p class="text-sm italic text-stone-600 leading-relaxed">"Consumers evaluate fare increases on transactional fairness, not economic necessity. Providing infrastructure cost data doesn't curb resistance — unless it's framed through a Gist Communication model that makes the benefit feel local and personal."</p>
         </div>
+
+        <!--HUMAN_INSIGHT-->
         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
@@ -1168,12 +1177,13 @@ customVisualHTML: `
     <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
     <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.results}</p>
 </div>` : ''}
-                        <div class="border-t border-stone-200 pt-4">
-                            ${data.customChartHTML}
-                        </div>
-                        <div class="border-t border-stone-200 pt-4 space-y-2">
-                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
-                            <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
+                                                <div class="border-t border-stone-200 pt-4">
+                            ${data.customChartHTML.replace('<!--HUMAN_INSIGHT-->', `
+                                <div class="pt-4 pb-2 space-y-2">
+                                    <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
+                                    <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
+                                </div>
+                            `)}
                         </div>
                     </div>
             `;
