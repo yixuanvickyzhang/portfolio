@@ -592,29 +592,7 @@ customVisualHTML: `
                 ],
                 customChartHTML: `
     <div class="space-y-6">
-                <div class="bg-stone-50 p-4 rounded-xl border border-stone-100 space-y-3">
-                    <span class="text-[10px] uppercase font-bold text-stone-400 block">Significant Predictors</span>
-                    <div class="space-y-1.5 text-[11px] text-stone-600">
-                        <div class="flex justify-between items-start gap-2">
-                            <span>Agency (Current AI)</span>
-                            <span class="font-semibold text-rose-600 shrink-0">β = −0.34, p = .001</span>
-                        </div>
-                        <div class="flex justify-between items-start gap-2">
-                            <span>Experience (Future AI)</span>
-                            <span class="font-semibold text-emerald-700 shrink-0">β = +0.19, p = .003</span>
-                        </div>
-                        <div class="flex justify-between items-start gap-2">
-                            <span>Agency (Future AI)</span>
-                            <span class="font-semibold text-stone-400 shrink-0">β = 0.08, n.s.</span>
-                        </div>
-                        <div class="flex justify-between items-start gap-2">
-                            <span>Experience (Current AI)</span>
-                            <span class="font-semibold text-stone-400 shrink-0">β = −0.13, n.s.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
 
         <!-- Chart + Table side by side -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -639,7 +617,7 @@ customVisualHTML: `
                                 <span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span>
                             </div>
                             <!-- Plot area -->
-                            <div class="flex-grow relative h-52 ml-1 overflow-hidden">
+                            <div class="flex-grow relative h-52 ml-1">
                                 <div class="absolute inset-0 flex flex-col justify-between">
                                     <div class="border-b border-stone-200/40 w-full h-0"></div>
                                     <div class="border-b border-stone-200/40 w-full h-0"></div>
@@ -659,7 +637,7 @@ customVisualHTML: `
                                     <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 38%; top: 38%;"></span>
                                     <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 58%; top: 48%;"></span>
                                 </div>
-                                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+<svg style="position:absolute;top:0;left:0;width:100%;height:100%;" viewBox="0 0 100 100" preserveAspectRatio="none">
                                     <line x1="5" y1="58" x2="95" y2="42" stroke="#93c5fd" stroke-width="2.5" />
                                     <line x1="5" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="2 1" stroke-width="2.5" />
                                     <line x1="5" y1="45" x2="95" y2="52" stroke="#fca5a5" stroke-width="2.5" />
@@ -1208,15 +1186,15 @@ customVisualHTML: `
                             <p class="text-sm text-stone-600 leading-relaxed">${data.methodology}</p>
                         </div>
                        ${data.results ? `
-<div class="border-t border-stone-200 pt-4 space-y-4">
+<div class="border-t border-stone-200 pt-4 space-y-6">
     <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
     <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.results}</p>
+    <div class="pt-2">${data.customChartHTML || ''}</div>
 </div>` : ''}
                         <div class="border-t border-stone-200 pt-4 space-y-2">
                             <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
                             <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
                         </div>
-                        <div class="pt-2">${data.customChartHTML}</div>
                     </div>
             `;
             lucide.createIcons();
