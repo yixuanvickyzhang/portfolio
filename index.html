@@ -1161,12 +1161,14 @@ customVisualHTML: `
                             <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Methodology & Empirical Context</h4>
                             <p class="text-sm text-stone-600 leading-relaxed">${data.methodology}</p>
                         </div>
-                       ${data.results ? `
-<div class="border-t border-stone-200 pt-4 space-y-6">
+                                             ${data.results ? `
+<div class="border-t border-stone-200 pt-4 space-y-4">
     <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
     <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.results}</p>
-    <div class="pt-2">${data.customChartHTML || ''}</div>
 </div>` : ''}
+                        <div class="border-t border-stone-200 pt-4">
+                            ${data.customChartHTML}
+                        </div>
                         <div class="border-t border-stone-200 pt-4 space-y-2">
                             <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
                             <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
