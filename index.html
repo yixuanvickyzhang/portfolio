@@ -49,7 +49,7 @@
     </script>
     <style>
         .tab-transition {
-            transition: all 0.25s cubic-besier(0.4, 0, 0.2, 1);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .bg-cream {
             background-color: #FAF9F5;
@@ -142,7 +142,8 @@
                             <p class="text-sm font-semibold text-emerald-700 font-sans">Master of Arts (Hons) Psychology and Business</p>
                             <p class="text-xs text-stone-600 leading-relaxed font-sans">
                                 An interdisciplinary degree combining in-depth psychological study on human cognition, decision-making biases, reasoning, and social behaviour, with business modules in marketing, analytics, and information systems. 
-                            <span class="text-[10px] text-stone-500 font-semibold block">September 2021 - May 2025</span>
+                            </p>
+                                <span class="text-[10px] text-stone-500 font-semibold block">September 2021 - May 2025</span>
                         </div>
                     </div>
                 </div>
@@ -323,12 +324,12 @@
             <div class="space-y-4">
                 <span class="text-xs font-bold uppercase tracking-wider text-stone-200 block">Network Anchors</span>
                 <div class="flex gap-4 text-xs font-medium">
-                    <a href="www.linkedin.com/in/yixuanvshang" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="linkedin" class="w-4 h-4 text-emerald-400"></i> LinkedIn</a>
+                    <a href="www.linkedin.com/in/yixuanvzhang" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="linkedin" class="w-4 h-4 text-emerald-400"></i> LinkedIn</a>
                 </div>
             </div>
         </div>
         <div class="max-w-6xl mx-auto border-t border-stone-800 mt-12 pt-6 text-center text-xs text-stone-500">
-            © 2026 Yixuan (Vicky) shang
+            © 2026 Yixuan (Vicky) Zhang
         </div>
     </footer>
 
@@ -1248,10 +1249,12 @@ customVisualHTML: `
 
         // Initialise script components on layout ready
         window.onload = function () {
-            lucide.createIcons();
-            renderResearchReport();
-            renderWorkExperience();
-        }
+    lucide.createIcons();
+    setTimeout(() => {
+        renderResearchReport();
+        renderWorkExperience();
+    }, 50);
+}
     </script>
 </body>
 </html>
