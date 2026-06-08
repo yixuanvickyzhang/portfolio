@@ -344,12 +344,12 @@
             'fringe': {
                 category: "Consumer Insight & Audience Analysis",
                 title: "Optimising Audience Engagement at Edinburgh Fringe",
-                challenge: "Promoting 47 academically complex, thought-provoking research shows in a high-density, highly-distracted public festival space.",
-                insight: "Rather than marketing general creative blurbs, I color-coded shows into highly intuitive categories to minimise choice-overload, matching consumer behavior insights with real-time conversion models.",
-                analysis: "Spearheaded a multi-channel campaign. For <strong>Instagram</strong>, developed interactive polls, video snippets of performers, and on-the-day stories to generate visceral, System 1 interest. For <strong>X (Twitter)</strong>, drafted high-level, research-centric threads and peer-to-peer engagement, explicitly tagging Dundee, Edinburgh, and other partner UK institutions. For <strong>Email & Print</strong>, drafted target segment newsletter copy and deployed color-coded offline flyers at Fringe hubs to guide choices.",
+                challenge: "Promoting 47 academically complex, thought-provoking research shows for the Cabaret of Dangerous Ideas (CoDI), a public engagement initiative spanning 8 UK universities and institutions, produced in partnership with Fair Play Ltd and The Stand Comedy Club. The brief ran three months end-to-end, set against the world's largest performing arts festival: the Edinburgh Festival Fringe, a stimulus-saturated environment where audience attention is the scarcest resource.",
+                insight: "Fringe audiences face acute choice overload across hundreds of simultaneous events. Rather than positioning shows generically, I applied category-based clustering, colour-coding events into intuitive thematic groups to reduce decision fatigue, shorten the path to booking, and increase click-through rates among high-intent audiences..",
+                analysis: "Created and coordinated asset delivery across a full multi-channel campaign. Tracked channel-level KPIs and daily ticket conversion rates to dynamically reallocate cross-promotion toward underperforming shows. Implemented post-show audience surveys as a real-time feedback loop to sharpen messaging mid-campaign. Served as the central communication point across stakeholders, managing onboarding, notetaking in production meetings, and aligning objectives across the academic, production, and venue teams.",
                 parameters: [
     { label: "Role", value: "Communications & Engagement Intern" },
-    { label: "Department", value: "Edinburgh Research Office (The University of Edinburgh" },
+    { label: "Department", value: "Edinburgh Research Office (The University of Edinburgh)" },
     { label: "Duration", value: "Jun — Aug 2024" }
 ],
                 metrics: [
@@ -977,7 +977,7 @@ customVisualHTML: `
             <p class="text-sm italic text-stone-600 leading-relaxed">"Users make content decisions within 500ms of gaze — but direct outward eye contact halts vertical scroll traversal. The face captures attention, but the wrong gaze direction stops the browsing momentum."</p>
         </div>
         <!--HUMAN_INSIGHT-->
-        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
     <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
@@ -1033,7 +1033,7 @@ customVisualHTML: `
         </div>
 
         <!--HUMAN_INSIGHT-->
-        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
     <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
@@ -1110,22 +1110,22 @@ customVisualHTML: `
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-stone-200 pt-6">
                             <div class="space-y-2">
-                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">The Business Problem</h4>
+                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">The Business Problem</h4>
                                 <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.challenge}</p>
                             </div>
                             <div class="space-y-2">
-                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Psychology-Backed Insight</h4>
+                                <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Psychology-Backed Insight</h4>
                                 <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.insight}</p>
                             </div>
                         </div>
                         <div class="space-y-4 border-t border-stone-200 pt-6">
-                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Analytical Methodology</h4>
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Methodology</h4>
                             <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.analysis}</p>
                         </div>
                     </div>
                     <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
                         <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4 font-sans">
-                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block pb-2 border-b border-stone-100">Project Parameters</span>
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-700 block pb-2 border-b border-stone-100">Project Parameters</span>
                             <div class="space-y-3 text-xs">
     ${data.parameters.map(p => `
         <div>
@@ -1136,11 +1136,11 @@ customVisualHTML: `
 </div>
                         </div>
                         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
-                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-400 block border-b border-stone-800 pb-2">Quantitative Outcomes</span>
+                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-100 block border-b border-stone-800 pb-2">Quantitative Outcomes</span>
                             <div class="space-y-4">
                                 ${data.metrics.map(m => `
                                     <div class="space-y-1">
-                                        <span class="text-[10px] text-stone-400 block uppercase">${m.label}</span>
+                                        <span class="text-[10px] text-stone-100 block uppercase">${m.label}</span>
                                         <div class="text-2xl font-serif font-bold text-emerald-400">${m.value}</div>
                                         <p class="text-[11px] text-stone-400">${m.desc}</p>
                                     </div>
@@ -1169,18 +1169,18 @@ customVisualHTML: `
                             <span class="text-xs font-medium italic text-stone-400 block pt-1">${data.framework}</span>
                         </div>
                                                 <div class="border-t border-stone-200 pt-4 space-y-2">
-                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Methodology & Empirical Context</h4>
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Methodology & Empirical Context</h4>
                             <p class="text-sm text-stone-600 leading-relaxed">${data.methodology}</p>
                         </div>
                                              ${data.results ? `
 <div class="border-t border-stone-200 pt-4 space-y-4">
-    <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Key Findings</h4>
+    <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Key Findings</h4>
     <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.results}</p>
 </div>` : ''}
                                                 <div class="border-t border-stone-200 pt-4">
                             ${data.customChartHTML.replace('<!--HUMAN_INSIGHT-->', `
                                 <div class="pt-4 pb-2 space-y-2">
-                                    <h4 class="text-xs uppercase tracking-widest font-bold text-stone-400">Core Human Insight</h4>
+                                    <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Core Human Insight</h4>
                                     <p class="text-sm text-stone-700 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 font-sans leading-relaxed">${data.humanInsight}</p>
                                 </div>
                             `)}
