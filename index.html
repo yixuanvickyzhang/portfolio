@@ -593,7 +593,29 @@ customVisualHTML: `
                 customChartHTML: `
     <div class="space-y-6">
             
-
+        <!-- Brand Recommendations -->
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
+            <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
+            </div>
+            <div class="space-y-4">
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Avoid high-agency autonomy labels in copy.</span> Frame AI product features as analytical assistance modules rather than autonomous decision-makers — reducing moral accountability triggers.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Establish direct user-input visual links.</span> Build transparent interface loops that visibly connect specific user actions to system outputs — preserving perceived control.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Prominently display human-override assets.</span> Real-time override controls in B2B materials signal accountability and reduce the perceived experiential threat of future AI systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
         <!-- Chart + Table side by side -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- Regression Line Chart -->
@@ -605,53 +627,29 @@ customVisualHTML: `
                     </div>
                     <span class="text-[9px] bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5 rounded font-mono shrink-0">Preregistered</span>
                 </div>
-                <div class="relative w-full border border-stone-200/60 rounded-xl p-4 bg-stone-50/50">
-                    <div class="flex gap-2">
-                        <!-- Y axis title rotated -->
-                        <div class="flex items-center justify-center" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+                               <div class="relative w-full border border-stone-200/60 rounded-xl p-4 bg-stone-50/50">
+                    <div style="display:flex; gap:8px;">
+                        <div style="writing-mode:vertical-rl; transform:rotate(180deg); display:flex; align-items:center; justify-content:center;">
                             <span class="text-[8px] font-sans text-stone-400 tracking-wide">Concern for AI Safety</span>
                         </div>
-                        <div class="flex gap-1">
-                            <!-- Y axis numbers -->
-                            <div class="flex flex-col justify-between text-[9px] font-mono text-stone-400 pr-2 border-r border-stone-200 h-52">
+                        <div style="display:flex; gap:4px; flex:1;">
+                            <div style="display:flex; flex-direction:column; justify-content:space-between; font-size:9px; color:#a8a29e; padding-right:8px; border-right:1px solid #e7e5e4; height:208px;">
                                 <span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span>
                             </div>
-                            <!-- Plot area -->
-                            <div class="flex-grow relative h-52 ml-1">
-                                <div class="absolute inset-0 flex flex-col justify-between">
-                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                    <div class="border-b border-stone-200/40 w-full h-0"></div>
-                                </div>
-                                <div class="absolute inset-0 pointer-events-none opacity-20">
-                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 15%; top: 30%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 25%; top: 25%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 35%; top: 40%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 45%; top: 45%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 55%; top: 32%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-red-400" style="left: 65%; top: 50%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 18%; top: 45%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 38%; top: 38%;"></span>
-                                    <span class="absolute w-1 h-1 rounded-full bg-blue-400" style="left: 58%; top: 48%;"></span>
-                                </div>
-<svg style="position:absolute;top:0;left:0;width:100%;height:100%;" viewBox="0 0 100 100" preserveAspectRatio="none">
-                                    <line x1="5" y1="58" x2="95" y2="42" stroke="#93c5fd" stroke-width="2.5" />
-                                    <line x1="5" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="2 1" stroke-width="2.5" />
-                                    <line x1="5" y1="45" x2="95" y2="52" stroke="#fca5a5" stroke-width="2.5" />
-                                    <line x1="5" y1="32" x2="95" y2="65" stroke="#dc2626" stroke-width="3" />
+                            <div style="position:relative; flex:1; height:208px; margin-left:4px;">
+                                <svg style="position:absolute;top:0;left:0;width:100%;height:100%;" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <line x1="2" y1="58" x2="98" y2="42" stroke="#93c5fd" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                                    <line x1="2" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="4 2" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                                    <line x1="2" y1="45" x2="98" y2="52" stroke="#fca5a5" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                                    <line x1="2" y1="28" x2="98" y2="68" stroke="#dc2626" stroke-width="3" vector-effect="non-scaling-stroke"/>
                                 </svg>
-                                <span class="absolute text-[8px] font-bold text-red-600" style="right: 2%; bottom: 26%;">Agency (Current) ***</span>
-                                <span class="absolute text-[8px] font-bold text-blue-500" style="right: 2%; top: 32%;">Experience (Future) **</span>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-between pl-10 mt-1 text-[9px] font-mono text-stone-400">
+                    <div style="display:flex; justify-content:space-between; padding-left:40px; margin-top:4px; font-size:9px; color:#a8a29e; font-family:monospace;">
                         <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
                     </div>
-                    <div class="text-center mt-1">
+                    <div style="text-align:center; margin-top:4px;">
                         <span class="text-[8px] font-sans text-stone-400">Perception of Mind Dimension</span>
                     </div>
                     <div class="mt-3 pt-3 border-t border-stone-200/60 grid grid-cols-2 gap-1.5 text-[9px] font-medium text-stone-600">
@@ -723,28 +721,6 @@ customVisualHTML: `
             </div>
         </div>
 
-        <!-- Brand Recommendations -->
-        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-4">
-            <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
-                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
-                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
-            </div>
-            <div class="space-y-4">
-                <div class="flex gap-3 items-start">
-                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Avoid high-agency autonomy labels in copy.</span> Frame AI product features as analytical assistance modules rather than autonomous decision-makers — reducing moral accountability triggers.</p>
-                </div>
-                <div class="flex gap-3 items-start">
-                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Establish direct user-input visual links.</span> Build transparent interface loops that visibly connect specific user actions to system outputs — preserving perceived control.</p>
-                </div>
-                <div class="flex gap-3 items-start">
-                    <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Prominently display human-override assets.</span> Real-time override controls in B2B materials signal accountability and reduce the perceived experiential threat of future AI systems.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 `,
             },
             'guinness': {
