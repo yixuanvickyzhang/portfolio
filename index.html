@@ -974,7 +974,7 @@ customVisualHTML: `
             },
             'netflix': {
             category: "Consumer Neuroscience & Eye-Tracking Optimisation",
-            title: "Biometric Diagnostics in Interface Visual Processing",
+            title: "Face vs. Scene: Eye-Tracking Thumbnail Optimisation on Netflix",
             framework: "LSE Consumer Neuroscience Module (MG4J7) — Group Research",
             methodology: `Conducted a 3×3 within-subjects experiment (N=25) measuring how thumbnail facial presence affects visual attention and emotional engagement in a Netflix-style interface. Nine AI-generated stimuli were created across three genres (Action, Horror, Comedy) × three face conditions (Single Face, Multiple Faces, No Face), with visual tone, colour palette, text, and text placement held constant across conditions to isolate the facial variable.
 <br><br>
@@ -1099,7 +1099,7 @@ Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixa
             },
             'tfl': {
                 category: "Behavioral Economics & Choice Architecture",
-                title: "Nudging Perceptions Amid Transport Public Price Adjustments",
+                title: "A Behavioural Diagnosis of TfL Tube Fare Backlash",
                 framework: "LSE Consumer Insights Module",
                 methodology: "Diagnosed public sentiment around the 5.8% London Underground fare increase announced December 2025. Applied Self-Determination Theory, Gist Communication frameworks, and autonomy-preserving nudge design to construct a behavioural blueprint for managing consumer resistance. Cross-tabulated sentiment data by media channel to identify where backlash was most concentrated and where nudges could be most effective.",
                 results: `Public resistance to the fare increase is not primarily about price sensitivity. Behavioural diagnosis identified three compounding mechanisms: loss aversion causing fare increases to register as disproportionate losses rather than value exchanges; confirmation bias leading dissatisfied commuters to discount promised improvements as inconsistent with existing beliefs about TfL's inefficiency; and autonomy frustration among captive commuters who experience the increase as coercive rather than chosen. Rational justification alone cannot address any of these, requiring a distinct behavioural intervention targeting how commuters feel, what they associate with the Tube, and whether they perceive meaningful agency within structural constraints.`,
@@ -1171,42 +1171,113 @@ Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixa
 `,
             },
             'ppc': {
-                category: "Performance-Based Growth Optimisation & Budget Attribution",
-                title: "Data-Driven Budget Allocation & ROAS Optimisation",
-                framework: "LSE Digital Marketing Module - Strategy Simulation Analysis",
-                methodology: "Managed cross-channel search, shopping, and retargeting simulation bids across performance cycles (\$15k initial budget).",
-                humanInsight: "Strict adherence to traditional funnel-based budget models (spending heavily on interest-based display prior to high-intent search) produces substantial budget waste when audience retargeting pools are constrained.",
-                recommendations: [
-                    "Allocate initial budgets strictly into high-intent search variations to secure baseline pipeline goals.",
-                    "Run negative query filters daily to keep ad relevance high and CPA down.",
-                    "Implement agile budgeting models that reallocate display budgets into high-performing search targets instantly based on live data."
-                ],
-                customChartHTML: `
-                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-                        <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Attributed ROAS Performance across Ad Channels</span>
-                        <div class="space-y-3 font-sans text-xs text-stone-700">
-                            <div>
-                                <div class="flex justify-between font-medium mb-1">
-                                    <span>High-Intent Google Search Ads</span>
-                                    <span class="text-emerald-800 font-bold">ROAS: 4.48 ($5,400 allocated)</span>
-                                </div>
-                                <div class="w-full bg-stone-100 rounded-full h-2.5">
-                                    <div class="bg-emerald-700 h-2.5 rounded-full" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between font-medium mb-1">
-                                    <span>Product Shopping Ads</span>
-                                    <span class="text-emerald-800 font-bold">ROAS: 3.26 ($4,350 allocated)</span>
-                                </div>
-                                <div class="w-full bg-stone-100 rounded-full h-2.5">
-                                    <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 65%"></div>
-                                </div>
-                            </div>
-                        </div>
+    category: "Performance Marketing & Digital Ad Allocation",
+    title: "Funnel-Defying Paid Media: Search-First Strategy to 2.5x Revenue",
+    framework: "LSE Digital Marketing Module (MG4F3) — Group Simulation",
+    methodology: `A 7-round paid media simulation managing a $15,000 budget across Search, Display, and Shopping ad channels for a bag and accessories brand. Strategy evolved iteratively: early rounds tested broadly across keyword combinations, audience segments, and ad formats to generate learning data, before consolidating spend into proven performers based on live ROAS and conversion signals.
+<br><br>
+Keywords were tiered into best, moderate, and low performers with differentiated bidding applied accordingly rather than eliminating underperformers prematurely. Display retargeting targeted two high-intent funnel segments — product page visitors and add-to-cart users — with messaging designed to reactivate rather than introduce. The central strategic decision was departing from the conventional awareness-first funnel model in favour of aggressive intent-capture via Search and Shopping from early rounds.`,
+    results: `The strategy generated $49,675 in total revenue, 2.5x the $20,000 simulation target. Search ads received the largest allocation (36%, $5,400) and delivered the strongest ROAS (4.48), functioning as the primary revenue engine. Shopping ads (29%, $4,350) produced ROAS 3.26 across three subdivided product groups. The key inflection point came when display budget was partially reallocated from retargeting toward interest-based targeting: budget utilisation increased from $2,400 to $3,700 and revenue nearly doubled from ~$6,500 to ~$12,000. Retargeting, despite high theoretical ROAS, was constrained by a limited audience pool — only $756 of the $2,100 allocated was spent.`,
+    humanInsight: "Retargeting has the highest ROI per dollar in theory, but only when the audience pool is large enough to spend into. At early growth stages with limited site traffic, front-loading budget into awareness and retargeting starves the channels that can actually convert. Intent-first allocation — Search and Shopping — outperforms full-funnel orthodoxy when audience scale is the binding constraint.",
+    recommendations: [
+        "Prioritise intent capture over funnel orthodoxy at early growth stages. For constrained budgets with limited existing audiences, high-intent Search and Shopping outperform display — retargeting cannot scale without sufficient traffic feeding the pool.",
+        "Tier keywords by performance, not just relevance. Structured categorisation into best, moderate, and low performers with differentiated bidding outperforms binary keep-or-cut decisions based on early data alone.",
+        "Let ROAS data drive reallocation, not fixed channel quotas. Budget decisions should move daily toward highest-performing segments — the display reallocation that nearly doubled revenue came from following performance signals rather than holding to a predetermined funnel split."
+    ],
+    customChartHTML: `
+        <div class="space-y-6">
+            <!-- Funnel Theory vs Actual -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Theoretical Funnel Allocation vs. Actual Strategy</span>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-[11px] font-sans border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-stone-200">
+                                <th class="text-left py-2 pr-4 text-stone-500 font-semibold">Funnel Stage</th>
+                                <th class="text-left py-2 px-4 text-stone-500 font-semibold">Theory</th>
+                                <th class="text-left py-2 px-4 text-emerald-800 font-semibold">Our Strategy</th>
+                                <th class="text-left py-2 pl-4 text-stone-500 font-semibold">ROAS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-stone-100">
+                                <td class="py-2.5 pr-4 text-stone-500 text-[10px] uppercase font-bold">Awareness</td>
+                                <td class="py-2.5 px-4 text-stone-600">Display — large budget</td>
+                                <td class="py-2.5 px-4 text-stone-600">$3,000 · 20% of budget</td>
+                                <td class="py-2.5 pl-4 text-stone-500 font-mono">2.19</td>
+                            </tr>
+                            <tr class="border-b border-stone-100 bg-emerald-50/40">
+                                <td class="py-2.5 pr-4 text-stone-500 text-[10px] uppercase font-bold">Consideration</td>
+                                <td class="py-2.5 px-4 text-stone-600">Search — medium budget</td>
+                                <td class="py-2.5 px-4 text-emerald-800 font-semibold">$5,400 · 36% — largest share</td>
+                                <td class="py-2.5 pl-4 text-emerald-700 font-bold font-mono">4.48</td>
+                            </tr>
+                            <tr class="border-b border-stone-100">
+                                <td class="py-2.5 pr-4 text-stone-500 text-[10px] uppercase font-bold">Re-engagement</td>
+                                <td class="py-2.5 px-4 text-stone-600">Retargeting — largest budget</td>
+                                <td class="py-2.5 px-4 text-rose-600">$756 spent of $2,100 — pool too small</td>
+                                <td class="py-2.5 pl-4 text-stone-400 font-mono">—</td>
+                            </tr>
+                            <tr class="border-b border-stone-100 bg-emerald-50/40">
+                                <td class="py-2.5 pr-4 text-stone-500 text-[10px] uppercase font-bold">Purchase</td>
+                                <td class="py-2.5 px-4 text-stone-600">Shopping — medium budget</td>
+                                <td class="py-2.5 px-4 text-emerald-800 font-semibold">$4,350 · 29% of budget</td>
+                                <td class="py-2.5 pl-4 text-emerald-700 font-bold font-mono">3.26</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="border-t-2 border-stone-200 bg-stone-900">
+                                <td class="py-2.5 pr-4 text-stone-400 text-[10px] uppercase font-bold pl-2" colspan="2">Total Revenue</td>
+                                <td class="py-2.5 px-4 text-emerald-400 font-bold" colspan="2">$49,675 achieved — 2.5× the $20,000 target</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Display reallocation inflection point -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Key Inflection Point — Display Budget Reallocation</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
+                    <div class="bg-stone-50 border border-stone-200 rounded-xl p-4 space-y-2">
+                        <div class="text-[10px] uppercase font-bold text-stone-500">Before Reallocation</div>
+                        <div class="text-lg font-serif font-bold text-stone-700">~$6,500 revenue</div>
+                        <div class="text-[11px] text-stone-500">$2,400 budget utilised · retargeting-heavy split</div>
                     </div>
-                `
-            }
+                    <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-2">
+                        <div class="text-[10px] uppercase font-bold text-emerald-700">After Reallocation</div>
+                        <div class="text-lg font-serif font-bold text-emerald-700">~$12,000 revenue</div>
+                        <div class="text-[11px] text-emerald-600">$3,700 budget utilised · shifted toward interest-based</div>
+                    </div>
+                </div>
+                <p class="text-[10px] text-stone-400 italic">Shifting display budget from retargeting toward interest-based targeting nearly doubled revenue by feeding more users into the conversion funnel rather than re-engaging a pool too small to scale.</p>
+            </div>
+
+            <!--HUMAN_INSIGHT-->
+
+            <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
+                <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex gap-3 items-start">
+                        <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
+                        <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Prioritise intent capture over funnel orthodoxy at early growth stages.</span> High-intent Search and Shopping outperform display when retargeting audiences are too small to scale — feed the pool before relying on it.</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
+                        <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Tier keywords by performance, not just relevance.</span> Structured categorisation into best, moderate, and low performers with differentiated bidding outperforms binary keep-or-cut decisions based on early data alone.</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
+                        <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Let ROAS data drive reallocation, not fixed channel quotas.</span> The display reallocation that nearly doubled revenue came from following performance signals — budget decisions should move toward highest-performing segments, not hold to predetermined funnel splits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+},
         };
 
         // Render Work Experience Sub-Tab Card
