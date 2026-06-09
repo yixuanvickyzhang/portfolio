@@ -155,7 +155,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm space-y-3">
                         <div class="bg-emerald-50 text-emerald-800 p-2.5 rounded-xl w-fit"><i data-lucide="brain" class="w-5 h-5"></i></div>
-                        <h3 class="font-serif font-bold text-lg text-stone-900">Branding & Execution</h3>
+                        <h3 class="font-serif font-bold text-lg text-stone-900">Branding & Media Execution</h3>
                         <p class="text-xs text-stone-600 leading-relaxed font-sans">Building campaigns on behavioural principles, designing channel strategies around how audiences process information, reducing friction, amplifying salience, and enhancing engagement.</p>
                     </div>
                     <div class="bg-white p-6 rounded-2xl border border-stone-200/60 shadow-sm space-y-3">
@@ -598,16 +598,24 @@ customVisualHTML: `
         // Structured Research Database
         const researchDb = {
             'ai': {
-                category: "Quantitative Data Modeling & Behavioral Trust Foundations",
-                title: "Mind Perception Mechanics in AI Product Trust Metrics",
+                category: "Quantitative Data Modeling & Behavioral Trust",
+                title: "Perceiving Minds in AI: What Drives Attitudes Toward AI Safety",
                 framework: "University of Edinburgh Undergraduate Psychology Dissertation (First Class 78%)",
-                methodology: "Formulated and ran empirical study examining how psychological mind attribution parameters (agency vs. experience dimensions) modulate public anxiety levels toward automation safety risks. Managed extensive outlier diagnostic checking in R.",
-                results: "The model was statistically significant (F(13,201) = 2.99, p &lt; .001), explaining 16.2% of variance in AI safety concern (R² = .162). Agency in current AI significantly predicted <em>lower</em> concern (β = −0.34, p = .001) — contrary to H1a. Experience in future AI significantly predicted <em>higher</em> concern (β = +0.19, p = .003), supporting H2b. Neither agency in future AI nor experience in current AI reached significance.",
-                humanInsight: "Public safety concern and product trust levels towards AI technology are indexed heavily on perceived 'Agency' (the ability to act, plan, and intend) rather than perceived 'Experience' (the capacity to feel or adapt). High-agency product messaging triggers moral accountability mechanisms in the consumer's mind, inflating trust barriers.",
+                methodology: "Formulated and ran an empirical study examining how perceived mind attribution, specifically the two dimensions of Agency (the capacity to plan, self-regulate, and act intentionally) and Experience (the capacity to feel and sense subjective states such as pain, hunger, or emotion), predict public concern about AI safety. Drawing on Gray et al.'s (2007) mind perception framework, the study assessed these dimensions separately for both current AI (e.g., ChatGPT, recommendation algorithms, autonomous vehicles) and future AI, recognising that people hold meaningfully different expectations across time horizons. Collected online survey data (N = 215) via Qualtrics and ran a multiple linear regression model with full assumption validation, controlling for age, gender, political orientation, and education. ",
+                <br><br>
+<span class="font-semibold text-stone-700">Hypotheses (preregistered):</span>
+<ul class="mt-2 space-y-1 list-none">
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H1a:</strong> Higher perceived agency in current AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H1b:</strong> Higher perceived agency in future AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H2a:</strong> Higher perceived experience in current AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H2b:</strong> Higher perceived experience in future AI is associated with greater concern for AI safety.</span></li>
+</ul>`,
+                results: "The model was statistically significant (F(13,201) = 2.99, p &lt; .001), explaining 16.2% of variance in AI safety concern (R² = .162). Agency in current AI significantly predicted <em>lower</em> concern (β = −0.34, p = .001) — contrary to H1a. Experience in future AI significantly predicted <em>higher</em> concern (β = 0.19, p = .003), supporting H2b. Neither agency in future AI nor experience in current AI reached significance.",
+                humanInsight: "Public concern about AI safety is shaped less by whether AI can feel, and more by whether it can act. Perceived agency in current AI (i.e., the sense that it plans, self-regulates, and operates deliberately) was paradoxically associated with lower concern, possibly because familiar, competent AI (e.g., ChatGPT, navigation tools) fosters trust rather than anxiety. However, when people imagine future AI possessing experiential capacities (i.e., the ability to feel hunger, pain, or emotion) concern rises sharply. This suggests a shift in the psychological threat model: near-term AI is evaluated on performance and reliability, while future AI triggers deeper anxieties about identity, distinctiveness, and existential risk when it begins to mirror human inner life. ",
                 recommendations: [
-                    "Avoid High-Agency Autonomy Labels in Copy: Frame product features as analytical assistance modules.",
-                    "Establish Direct User-Input Visual Links: Build transparent interface loops linking specific user actions.",
-                    "Explicit Human-Override Assets: Prominently display real-time override dials in B2B brochures."
+                    "Lead with competence, not autonomy: Current AI is trusted when it feels reliable and familiar. Marketing AI products should emphasise task-specific performance and track record rather than broad autonomous capability, which can trigger moral accountability concerns.",
+                    "Avoid experiential language for future-facing AI: Framing AI as capable of feeling, sensing, or having preferences activates distinctiveness threat and existential anxiety. Keep product language anchored in function and utility, not inner life.",
+                    "Give users visible control: Since agency perception is tied to trust when outcomes are positive, making human oversight explicit — through override controls, audit trails, or decision explanations — preserves trust while managing accountability concerns."
                 ],
                 customChartHTML: `
     <div class="space-y-6">
@@ -637,9 +645,9 @@ customVisualHTML: `
                             <div style="position:relative; flex:1; height:208px; margin-left:4px;">
                                 <svg style="position:absolute;top:0;left:0;width:100%;height:100%;" viewBox="0 0 100 100" preserveAspectRatio="none">
                                     <line x1="2" y1="58" x2="98" y2="42" stroke="#93c5fd" stroke-width="2" vector-effect="non-scaling-stroke"/>
-                                    <line x1="2" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-dasharray="4 2" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                                    <line x1="2" y1="52" x2="80" y2="52" stroke="#1d4ed8" stroke-width="2" vector-effect="non-scaling-stroke"/>
                                     <line x1="2" y1="45" x2="98" y2="52" stroke="#fca5a5" stroke-width="2" vector-effect="non-scaling-stroke"/>
-                                    <line x1="2" y1="28" x2="98" y2="68" stroke="#dc2626" stroke-width="3" vector-effect="non-scaling-stroke"/>
+                                    <line x1="2" y1="28" x2="98" y2="68" stroke="#dc2626" stroke-width="2" vector-effect="non-scaling-stroke"/>
                                 </svg>
                             </div>
                         </div>
@@ -667,7 +675,7 @@ customVisualHTML: `
                     <table class="w-full text-[11px] font-sans text-stone-600 border-collapse">
                         <thead>
                             <tr class="border-b-2 border-stone-300">
-                                <th class="text-left py-2 pr-3 font-semibold text-stone-700">Variable</th>
+                                <th class="text-left py-2 pr-3 font-semibold text-stone-700">Independent Variables</th>
                                 <th class="text-center py-2 px-2 font-semibold text-stone-700" colspan="3">Current</th>
                                 <th class="text-center py-2 px-2 font-semibold text-stone-700" colspan="3">Future</th>
                             </tr>
@@ -750,7 +758,8 @@ customVisualHTML: `
                 title: "Deconstructing the Stout Beer Choice Engine",
                 framework: "LSE Marketing Analytics I Module",
                 methodology: "Developed and executed a comprehensive mixed-method consumer study combining exploratory qualitative interviews (N=5) and quantitative surveys (N=233) to measure consumption triggers.",
-                humanInsight: "While social and enhancement motivations act as strong drivers, conformity yielded a significant negative association. Consuming Guinness is perceived as a deliberate expression of individualistic preference rather than passive peer compliance.",
+                results: `The model was statistically significant (F(5, 227) = 79.77, p &lt; .001), explaining 63.7% of variance in purchase intention (R² = .637). Enhancement (β = +0.54, p &lt; .001) and Coping (β = +0.21, p &lt; .001) were the strongest positive predictors. Social motivation also significantly predicted higher purchase intention (β = +0.12, p = .02). Contrary to H1b, Conformity motivation significantly predicted <em>lower</em> purchase intention (β = −0.19, p &lt; .001). Cultural Exploration showed no significant main effect (β = +0.03, p = .50), though interaction analysis revealed it was a stronger driver among visitors and tourists (p = .08). The advertising experiment confirmed motive fit matters: conformity-framed ads produced the lowest ad quality ratings and the only negative brand perception shift (M = −0.66), while social-framed ads generated the strongest positive brand response (M = +0.83).`,
+                humanInsight: "Conformity drinking is anti-correlated with Guinness purchase intent, where people don't choose Guinness because everyone else does. They choose it as a deliberate act of cultural participation and personal identity expression. The "Split the G" ritual is not marketing fluff; it is a behavioural identity marker that signals belonging without demanding conformity. Guinness is most effective when positioned as an experiential, individualistic choice rather than a social default.",
                 recommendations: [
                     "Leverage 'Small-Win Moments' to frame Guinness as a rewarding ritual.",
                     "Deploy 'Split the G' micro-challenges into localised digital referral filters.",
@@ -930,6 +939,20 @@ customVisualHTML: `
                     </div>
                     
                     <!--HUMAN_INSIGHT-->
+                    <div class="flex items-center justify-between bg-white border border-stone-200 rounded-2xl px-5 py-4 shadow-sm">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-emerald-50 text-emerald-800 p-2.5 rounded-xl">
+                                <i data-lucide="file-text" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider text-stone-400 block">LSE Marketing Analytics I</span>
+                                <span class="text-sm font-semibold text-stone-800">What Drives Consumers to Choose Guinness?</span>
+                            </div>
+                        </div>
+                        <a href="assets/guinness-report.pdf" target="_blank" class="flex items-center gap-1.5 bg-stone-900 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-stone-700 transition-colors shrink-0">
+                            View Report <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
                         <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
@@ -942,7 +965,7 @@ customVisualHTML: `
                 </div>
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Weaponise the Cultural Exploration motive.</span> Tourists, international students, and curious drinkers are the highest-intent segment — target via "first Guinness" moments and travel-adjacent content.</p>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Anchor campaigns in identity-led social moments, not peer pressure.</span> Tourists, international students, and curious drinkers are the highest-intent segment — target via "first Guinness" moments and travel-adjacent content.</p>
                 </div>
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
@@ -1144,11 +1167,11 @@ customVisualHTML: `
                     </div>
                     <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
                         <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4 font-sans">
-                            <span class="text-[10px] uppercase font-bold tracking-widest text-stone-700 block pb-2 border-b border-stone-100">Project Parameters</span>
+                            <span class="text-[11px] uppercase font-bold tracking-widest text-stone-700 block pb-2 border-b border-stone-100">Project Parameters</span>
                             <div class="space-y-3 text-xs">
     ${data.parameters.map(p => `
         <div>
-            <span class="text-[10px] text-stone-400 block">${p.label}</span>
+            <span class="text-[10px] text-emerald-800 block">${p.label}</span>
             <span class="font-semibold text-stone-800">${p.value}</span>
         </div>
     `).join('')}
