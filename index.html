@@ -288,7 +288,7 @@
                     Netflix Biometrics & Gase UX (Neuroscience)
                 </button>
                 <button id="res-tab-tfl" onclick="switchResearchSubTab('tfl')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
-                    TfL Behavioural Strategy (Economics)
+                    TfL Strategy (Behavioural Economics)
                 </button>
                 <button id="res-tab-ppc" onclick="switchResearchSubTab('ppc')" class="px-3 py-1.5 rounded-lg text-xs font-semibold tab-transition bg-stone-100 text-stone-600 hover:bg-stone-200">
                     PPC Ad Budget Allocation (Digital Strategy)
@@ -988,7 +988,7 @@ Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixa
     <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H3:</strong> Single or multiple face thumbnails will reduce attention to informational cues (genre, episode count, recommendation label) compared to non-face thumbnails.</span></li>
 </ul>`,
         results: `H1a confirmed: single faces attracted first fixation significantly faster than no-face (Δ=2,297ms, p=0.0004) and many-face thumbnails (Δ=1,213ms, p=0.0096). H1b and H2 were not supported; dwell time did not differ across conditions (F=1.548, p=0.219), and facial coding showed no emotional engagement advantage for face thumbnails, with scene tone and context proving stronger drivers than facial presence. H3 was strongly supported: faces suppressed attention to informational cues across fixation duration (p=.003), count (p=.005), and proportion (p<.001), with intensity scaling graded by face count.`,
-        humanInsight: "A face is not a guaranteed emotional shortcut. Single faces win the race for attention — they are biologically prioritised by the Fusiform Face Area — but this doesn't translate into longer engagement or stronger emotional response. What actually drives emotional activation is scene-level tone: lighting, genre signals, and narrative context. The more dangerous finding for interface design is the attention trade-off: faces literally crowd out the informational cues (genre, rating, recommendation labels) that users need to make viewing decisions. Multiple faces are the worst offender, creating a 2.4-second information processing gap. The interface is inadvertently optimising for capture at the expense of conversion.",
+        humanInsight: "A face is not a guaranteed emotional shortcut. Single faces win the attention race through biological prioritisation, but this does not translate into longer engagement or stronger emotional response — scene tone, lighting, and narrative context are the real drivers. The more consequential finding is the attention trade-off: faces crowd out the informational cues users need to make viewing decisions, with multiple faces creating a 2.4-second processing gap. The interface optimises for capture at the expense of conversion.",
         recommendations: [
         "Use single face thumbnails at the scrolling scale to capture initial fixation — but shift to scene-based, context-rich designs when thumbnails expand on hover, giving users the genre and tone signals they need to commit.",
         "Do not assume face = emotion. Optimise for mood cues — tone, lighting, and narrative context — rather than defaulting to faces. Genre-level data showed non-face thumbnails matched or outperformed face conditions emotionally in Action and Horror.",
@@ -1101,13 +1101,14 @@ Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixa
                 category: "Behavioral Economics & Choice Architecture",
                 title: "Nudging Perceptions Amid Transport Public Price Adjustments",
                 framework: "LSE Consumer Insights Module",
-                methodology: "Diagnosed public sentiment around the 2026 TfL fare increase across digital channels. Applied Self-Determination Theory, Gist Communication frameworks, and autonomy-preserving nudge design to construct a behavioural blueprint for managing consumer resistance. Cross-tabulated sentiment data by media channel to identify where backlash was most concentrated and where nudges could be most effective.",
-                humanInsight: "Consumers evaluate fare adjustments on transactional reciprocity, not operational costs. Public anger is not price sensitivity, but a perceived loss of autonomy and a feeling of manipulation (controlled motivation). Transitioning from external regulation to identified regulation via 'gist-communication' lowers public resentment.",
+                methodology: "Diagnosed public sentiment around the 5.8% London Underground fare increase announced December 2025. Applied Self-Determination Theory, Gist Communication frameworks, and autonomy-preserving nudge design to construct a behavioural blueprint for managing consumer resistance. Cross-tabulated sentiment data by media channel to identify where backlash was most concentrated and where nudges could be most effective.",
+                results: `Public resistance to the fare increase is not primarily about price sensitivity. Behavioural diagnosis identified three compounding mechanisms: loss aversion causing fare increases to register as disproportionate losses rather than value exchanges; confirmation bias leading dissatisfied commuters to discount promised improvements as inconsistent with existing beliefs about TfL's inefficiency; and autonomy frustration among captive commuters who experience the increase as coercive rather than chosen. Rational justification alone cannot address any of these, requiring a distinct behavioural intervention targeting how commuters feel, what they associate with the Tube, and whether they perceive meaningful agency within structural constraints.`,
+                humanInsight: "Consumers evaluate fare increases emotionally and then rationalise. The dominant gist formed instantly is "paying more for the same," and once set filters all subsequent information. The implication is that post-announcement messaging cannot win an argument; it can only reshape an experience. Trust is not rebuilt through explanation but through repeated, felt evidence that the increase was worth it, which means sensory and environmental cues at the point of travel matter more than any press release or funding rationale.",
                 recommendations: [
-                    "Transition marketing copy toward localised community upgrade metrics.",
-                    "Deploy choice architecture variations giving users flexible peak reward parameters.",
-                    "Replace dense corporate statements with highly accessible single-focus visuals."
-                ],
+    "Reframe at the gist level, not the data level. Replace dense funding rationale with single-focus, commuter-relevant outcome statements — 'Your fare funds cleaner air on this platform' — that form a positive gist before System 1 backlash consolidates.",
+    "Make improvements physically felt before they are communicated. Pair in-station and in-train sensory cues (temperature, cleanliness, CCTV signage) with fare messaging from the first post-increase journeys in March 2026, creating associative links between cost and lived value rather than promised value.",
+    "Shift from external to identified regulation via autonomy-supportive communication. Acknowledge captive reliance explicitly, publish a multi-year fare roadmap, and emphasise preserved concessions and fare caps — giving commuters the predictability and respect that moves acceptance from grudging compliance toward genuine understanding."
+],
                 customChartHTML: `
     <div class="space-y-6">
         <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Key Findings</h4>
@@ -1144,11 +1145,27 @@ Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixa
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
                     <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Deploy autonomy-preserving micro-nudges.</span> Offer automated off-peak credit rewards — preserves user agency while managing demand patterns.</p>
                 </div>
+                // Replace with:
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
                     <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Replace data density with Gist messaging.</span> Visual breakdowns focused on safety and reliability improvements outperform multi-page financial justifications.</p>
                 </div>
             </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+            <span class="text-[12px] uppercase font-bold text-emerald-800 block tracking-wider">Behavioural Campaign Mockups — In-Station & In-Train Signage</span>
+            <div class="flex gap-3 overflow-x-auto pb-2">
+                <img src="assets/tfl-1.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 1" />
+                <img src="assets/tfl-2.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 2" />
+                <img src="assets/tfl-3.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 3" />
+                <img src="assets/tfl-4.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 4" />
+                <img src="assets/tfl-5.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 5" />
+                <img src="assets/tfl-6.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 6" />
+                <img src="assets/tfl-7.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 7" />
+                <img src="assets/tfl-8.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 8" />
+                <img src="assets/tfl-9.png" class="w-auto h-48 rounded-xl border border-stone-200 object-cover flex-shrink-0" alt="TfL Mockup 9" />
+            </div>
+            <p class="text-[10px] text-stone-400 italic">In-station posters and in-train signage concepts priming associations between fare contributions and tangible service improvements. AI-generated mockups produced using artlist.io, Adobe Firefly, and notegpt.io.</p>
         </div>
     </div>
 `,
