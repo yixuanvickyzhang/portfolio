@@ -603,12 +603,12 @@ customVisualHTML: `
                 framework: "University of Edinburgh Undergraduate Psychology Dissertation (First Class 78%)",
                 methodology: `Formulated and ran an empirical study examining how perceived mind attribution, specifically the two dimensions of Agency (the capacity to plan, self-regulate, and act intentionally) and Experience (the capacity to feel and sense subjective states such as pain, hunger, or emotion), predict public concern about AI safety. Drawing on Gray et al.'s (2007) mind perception framework, the study assessed these dimensions separately for both current AI (e.g., ChatGPT, recommendation algorithms, autonomous vehicles) and future AI, recognising that people hold meaningfully different expectations across time horizons. Collected online survey data (N = 215) via Qualtrics and ran a multiple linear regression model with full assumption validation, controlling for age, gender, political orientation, and education.
 <br><br>
-<span class="font-semibold text-stone-700">Hypotheses (preregistered):</span>
+<span class="text-xs uppercase tracking-widest font-bold text-stone-700">Hypotheses (preregistered):</span>
 <ul class="mt-2 space-y-1 list-none">
-    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H1a:</strong> Higher perceived agency in current AI is associated with greater concern for AI safety.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H1b:</strong> Higher perceived agency in future AI is associated with greater concern for AI safety.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H2a:</strong> Higher perceived experience in current AI is associated with greater concern for AI safety.</span></li>
-    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span><strong>H2b:</strong> Higher perceived experience in future AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H1a:</strong> Higher perceived agency in current AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H1b:</strong> Higher perceived agency in future AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H2a:</strong> Higher perceived experience in current AI is associated with greater concern for AI safety.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H2b:</strong> Higher perceived experience in future AI is associated with greater concern for AI safety.</span></li>
 </ul>`,
                 results: "The model was statistically significant (F(13,201) = 2.99, p &lt; .001), explaining 16.2% of variance in AI safety concern (R² = .162). Agency in current AI significantly predicted <em>lower</em> concern (β = −0.34, p = .001) — contrary to H1a. Experience in future AI significantly predicted <em>higher</em> concern (β = 0.19, p = .003), supporting H2b. Neither agency in future AI nor experience in current AI reached significance.",
                 humanInsight: "Public concern about AI safety is shaped less by whether AI can feel, and more by whether it can act. Perceived agency in current AI (i.e., the sense that it plans, self-regulates, and operates deliberately) was paradoxically associated with lower concern, possibly because familiar, competent AI (e.g., ChatGPT, navigation tools) fosters trust rather than anxiety. However, when people imagine future AI possessing experiential capacities (i.e., the ability to feel hunger, pain, or emotion) concern rises sharply. This suggests a shift in the psychological threat model: near-term AI is evaluated on performance and reliability, while future AI triggers deeper anxieties about identity, distinctiveness, and existential risk when it begins to mirror human inner life. ",
@@ -755,9 +755,9 @@ customVisualHTML: `
             },
             'guinness': {
                 category: "Consumer Behavioral Analysis & Mixed-Method Marketing Analytics",
-                title: "Deconstructing the Stout Beer Choice Engine",
+                title: "What Makes Someone Choose a Guinness?",
                 framework: "LSE Marketing Analytics I Module",
-                methodology: "Developed and executed a comprehensive mixed-method consumer study combining exploratory qualitative interviews (N=5) and quantitative surveys (N=233) to measure consumption triggers.",
+                methodology: "Designed and executed a comprehensive mixed-methods consumer study on Guinness purchase intention. The qualitative stage comprised five semi-structured interviews to map how individuals articulate their drinking motivations and identify with constructs established in the Modified Drinking Motives Questionnaire (DMQR; Cooper, 1994). Interviews revealed a fifth motivation — Cultural Exploration (ties to Irish heritage, football fandom, and cultural curiosity) which was incorporated into the quantitative stage. The quantitative survey (N = 233) measured five motive types (Social, Enhancement, Coping, Conformity, and Cultural Exploration) against Guinness purchase intention using validated Likert scales. A multiple linear regression was run in R with full assumption validation. An embedded between-subjects advertising experiment (N = 175) using gen-AI images further tested the causal effects of motive-framed ad conditions on ad quality ratings and brand perception change.",
                 results: `The model was statistically significant (F(5, 227) = 79.77, p &lt; .001), explaining 63.7% of variance in purchase intention (R² = .637). Enhancement (β = +0.54, p &lt; .001) and Coping (β = +0.21, p &lt; .001) were the strongest positive predictors. Social motivation also significantly predicted higher purchase intention (β = +0.12, p = .02). Contrary to H1b, Conformity motivation significantly predicted <em>lower</em> purchase intention (β = −0.19, p &lt; .001). Cultural Exploration showed no significant main effect (β = +0.03, p = .50), though interaction analysis revealed it was a stronger driver among visitors and tourists (p = .08). The advertising experiment confirmed motive fit matters: conformity-framed ads produced the lowest ad quality ratings and the only negative brand perception shift (M = −0.66), while social-framed ads generated the strongest positive brand response (M = +0.83).`,
                 humanInsight: "Conformity drinking is anti-correlated with Guinness purchase intent, where people don't choose Guinness because everyone else does. They choose it as a deliberate act of cultural participation and personal identity expression. The \"Split the G\" ritual is not marketing fluff; it is a behavioural identity marker that signals belonging without demanding conformity. Guinness is most effective when positioned as an experiential, individualistic choice rather than a social default.",
                 recommendations: [
@@ -953,7 +953,7 @@ customVisualHTML: `
                             View Report <i data-lucide="arrow-right" class="w-3 h-3"></i>
                         </a>
                     </div>
-                        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
+                        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6 mt-6">
 <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
     <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
@@ -977,65 +977,129 @@ customVisualHTML: `
 `,
             },
             'netflix': {
-                category: "Consumer Neuroscience & Eye-Tracking Optimisation",
-                title: "Biometric Diagnostics in Interface Visual Processing",
-                framework: "LSE Consumer Neuroscience Module - Group Research",
-                methodology: "Mapped eye-tracking fixation variables using Netflix’s Aesthetic Visual Analysis (AVA) frameworks to evaluate sub-500ms selective gase trajectories. Explored visual attention and emotional engagement patterns across face vs. non-face thumbnail conditions (N=25).",
-                humanInsight: "Thumbnail faces lock focus incredibly fast (H1a supported; TTFF on faces was significantly faster than non-faces, p = 0.0004). However, direct gase matching can trigger instant sensory capture that paradoxically blinds consumers from discovering remaining options below. Immediate facial gase did not significantly impact overall valence or emotional activation (H2 rejected), but did create a severe attention trade-off, restricting the depth of text-based information processing (H3 supported).",
-                recommendations: [
-                    "Deploy directed thumbnail eye orientations targeting structural CTA buttons.",
-                    "Optimise layout cadence to alternate contrast distributions and break scanning fatigue.",
-                    "Implement low-cognitive simplified graphics for late-night interface configurations."
-                ],
+            category: "Consumer Neuroscience & Eye-Tracking Optimisation",
+            title: "Biometric Diagnostics in Interface Visual Processing",
+            framework: "LSE Consumer Neuroscience Module (MG4J7) — Group Research",
+            methodology: `Conducted a 3×3 within-subjects experiment (N=25) measuring how thumbnail facial presence affects visual attention and emotional engagement in a Netflix-style interface. Nine AI-generated stimuli were created across three genres (Action, Horror, Comedy) × three face conditions (Single Face, Multiple Faces, No Face), with visual tone, colour palette, text, and text placement held constant across conditions to isolate the facial variable.
+<br><br>
+Data collected via iMotions using two biometric channels: eye-tracking (fixation duration, Time to First Fixation [TTFF], fixation count, and proportion of fixation per AOI) and facial coding (Affectiva AFFDEX, frame-by-frame AU detection averaged per stimulus per participant). A post-study Qualtrics survey captured stated preferences and liking scores to compare with observed behaviour.
+<br><br>
+<span class="font-semibold text-stone-700">Hypotheses (preregistered):</span>
+<ul class="mt-2 space-y-1 list-none">
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H1a:</strong> Single face thumbnails will attract first fixation faster than multiple face or non-face thumbnails.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H1b:</strong> Single face thumbnails will attract longer fixation duration than multiple face or non-face thumbnails.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H2:</strong> Single or multiple face thumbnails will increase emotional engagement relative to non-face thumbnails.</span></li>
+    <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H3:</strong> Single or multiple face thumbnails will reduce attention to informational cues (genre, episode count, recommendation label) compared to non-face thumbnails.</span></li>
+</ul>`,
+            results: `<strong>H1a — Supported.</strong> One-way repeated-measures ANOVA revealed a significant effect of face condition on TTFF (F=10.175, p=0.0001). Tukey HSD post-hoc tests confirmed single face thumbnails were noticed significantly faster than no face thumbnails (Δ=2,297ms, p=0.0004) and many faces thumbnails (Δ=1,213ms, p=0.0096). No significant difference was found between many faces and no face conditions (Δ=1,084ms, p=0.182).
+<br><br>
+<strong>H1b — Not supported.</strong> Dwell time on the face AOI did not differ significantly across face conditions (F=1.548, p=0.219). Although single face thumbnails showed the highest mean dwell time (1,054ms) versus many faces (904ms) and no face (642ms), no pairwise comparison reached significance (all p>0.20, Tukey HSD).
+<br><br>
+<strong>H2 — Not supported.</strong> Facial coding (AFFDEX) detected no significant difference in emotional activation across face conditions. Survey data revealed that participants rated their preference for face-containing thumbnails positively (M=6.64, t(24)=3.02, p=0.006), yet genre-level facial coding showed no face thumbnails matching or outperforming face conditions in Action and Horror genres — suggesting emotional response was driven by scene tone and context rather than facial presence alone.
+<br><br>
+<strong>H3 — Supported.</strong> Face presence significantly suppressed attention to informational cues across all three metrics: fixation duration (p=.003), fixation count (p=.005), and proportion of fixation (p<.001), confirmed by Friedman omnibus tests (Duration χ²=16.00; Count χ²=14.32; Proportion χ²=14.25; all p<.001). Critically, the number of faces modulates the intensity of this trade-off in a graded pattern (Single Face > Multi Face > No Face). Temporal analysis further revealed that multi-face thumbnails introduced a 2,464ms delay before informational cues were noticed (p<.001) — double the no-face layout baseline of 1,225ms — while single face thumbnails caused no significant delay (Δ=151ms, n.s.).`,
+        humanInsight: "A face is not a guaranteed emotional shortcut. Single faces win the race for attention — they are biologically prioritised by the Fusiform Face Area — but this doesn't translate into longer engagement or stronger emotional response. What actually drives emotional activation is scene-level tone: lighting, genre signals, and narrative context. The more dangerous finding for interface design is the attention trade-off: faces literally crowd out the informational cues (genre, rating, recommendation labels) that users need to make viewing decisions. Multiple faces are the worst offender, creating a 2.4-second information processing gap. The interface is inadvertently optimising for capture at the expense of conversion.",
+        recommendations: [
+        "Use single face thumbnails at the scrolling scale to capture initial fixation — but shift to scene-based, context-rich designs when thumbnails expand on hover, giving users the genre and tone signals they need to commit.",
+        "Do not assume face = emotion. Optimise for mood cues — tone, lighting, and narrative context — rather than defaulting to faces. Genre-level data showed non-face thumbnails matched or outperformed face conditions emotionally in Action and Horror.",
+        "Avoid multi-face thumbnails in information-dense layouts. They impose a 2.4-second processing delay on informational cues and distribute rather than anchor attention — undermining both the engagement and the decision-making quality of the browsing session."
+    ],
                 customChartHTML: `
-     <div class="space-y-6">
+    <div class="space-y-6">
         <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Key Findings</h4>
+
+        <!-- H1a: TTFF — grounds rec 1 -->
         <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-            <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Attention Allocation by Thumbnail Type</span>
-            <div class="space-y-3 font-sans text-xs text-stone-600">
-                <div class="flex items-center gap-3">
-                    <span class="w-28 text-right text-[11px] shrink-0">Face (outward gaze)</span>
-                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-[#C0533A] h-3 rounded-full" style="width: 88%"></div></div>
-                    <span class="text-[#C0533A] font-bold w-16 shrink-0">Longest</span>
+            <div>
+                <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Figure 1 — Time to First Fixation by Face Condition</span>
+                <span class="text-[10px] text-stone-400 block mt-0.5">ANOVA: F=10.175, p=0.0001 · Tukey HSD post-hoc · H1a Supported</span>
+            </div>
+            <div class="space-y-3 font-sans text-xs text-stone-700">
+                <div>
+                    <div class="flex justify-between font-medium mb-1"><span>Single Face</span><span class="text-emerald-700 font-bold">~500ms — fastest</span></div>
+                    <div class="w-full bg-stone-100 rounded-full h-2.5"><div class="bg-emerald-600 h-2.5 rounded-full" style="width: 15%"></div></div>
                 </div>
-                <div class="flex items-center gap-3">
-                    <span class="w-28 text-right text-[11px] shrink-0">Face (inward gaze)</span>
-                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-emerald-700 h-3 rounded-full" style="width: 64%"></div></div>
-                    <span class="text-emerald-700 font-bold w-16 shrink-0">Medium</span>
+                <div>
+                    <div class="flex justify-between font-medium mb-1"><span>Many Faces</span><span class="text-amber-600 font-bold">~1,700ms</span></div>
+                    <div class="w-full bg-stone-100 rounded-full h-2.5"><div class="bg-amber-400 h-2.5 rounded-full" style="width: 52%"></div></div>
                 </div>
-                <div class="flex items-center gap-3">
-                    <span class="w-28 text-right text-[11px] shrink-0">Text-led thumbnail</span>
-                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-stone-300 h-3 rounded-full" style="width: 38%"></div></div>
-                    <span class="text-stone-400 font-bold w-16 shrink-0">Shorter</span>
-                </div>
-                <div class="flex items-center gap-3">
-                    <span class="w-28 text-right text-[11px] shrink-0">Background art only</span>
-                    <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-stone-200 h-3 rounded-full" style="width: 22%"></div></div>
-                    <span class="text-stone-400 font-bold w-16 shrink-0">Shortest</span>
+                <div>
+                    <div class="flex justify-between font-medium mb-1"><span>No Face</span><span class="text-rose-600 font-bold">~2,800ms — slowest</span></div>
+                    <div class="w-full bg-stone-100 rounded-full h-2.5"><div class="bg-rose-400 h-2.5 rounded-full" style="width: 88%"></div></div>
                 </div>
             </div>
+            <p class="text-[10px] text-stone-400 italic">Single faces captured first fixation 2,297ms faster than no-face thumbnails (p=0.0004) and 1,213ms faster than many-face thumbnails (p=0.0096). Dwell time, however, did not differ significantly across conditions — attention is captured fast but not held longer.</p>
         </div>
-        <div class="border-l-4 border-emerald-600 pl-4 py-2">
-            <p class="text-sm italic text-stone-600 leading-relaxed">"Users make content decisions within 500ms of gaze — but direct outward eye contact halts vertical scroll traversal. The face captures attention, but the wrong gaze direction stops the browsing momentum."</p>
+
+        <!-- H3: Attention trade-off + processing delay combined -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-6">
+            <div>
+                <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Figure 2 — The Attention Trade-Off: Faces vs. Informational Cues</span>
+                <span class="text-[10px] text-stone-400 block mt-0.5">Friedman tests: Duration χ²=16.00, Count χ²=14.32, Proportion χ²=14.25 — all p&lt;.001 · H3 Supported</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-sans">
+                <div class="bg-rose-50 border border-rose-100 rounded-xl p-4 space-y-1.5 text-center">
+                    <div class="text-[10px] uppercase font-bold text-rose-700">Single Face</div>
+                    <div class="text-xl font-serif font-bold text-rose-600">Lowest info attention</div>
+                    <div class="text-[10px] text-stone-500 mt-1">915ms · 4.7× fixations · 0.28 proportion</div>
+                    <div class="text-[10px] text-stone-500 italic mt-1">Focused anchor pulls gaze away from text</div>
+                </div>
+                <div class="bg-amber-50 border border-amber-100 rounded-xl p-4 space-y-1.5 text-center">
+                    <div class="text-[10px] uppercase font-bold text-amber-700">Multi Face</div>
+                    <div class="text-xl font-serif font-bold text-amber-600">+30% vs. single</div>
+                    <div class="text-[10px] text-stone-500 mt-1">1,061ms · 5.5× fixations · 0.27 proportion</div>
+                    <div class="text-[10px] text-stone-500 italic mt-1">Gaze splits across competing faces</div>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4 space-y-1.5 text-center">
+                    <div class="text-[10px] uppercase font-bold text-emerald-700">No Face</div>
+                    <div class="text-xl font-serif font-bold text-emerald-600">+80% vs. single</div>
+                    <div class="text-[10px] text-stone-500 mt-1">1,457ms · 6.7× fixations · 0.37 proportion</div>
+                    <div class="text-[10px] text-stone-500 italic mt-1">Gaze distributed freely to decision cues</div>
+                </div>
+            </div>
+
+            <!-- Processing delay sub-section -->
+            <div class="border-t border-stone-100 pt-4 space-y-3">
+                <span class="text-[10px] uppercase font-bold text-stone-500 block">Information Processing Delay — How much later were info cues noticed?</span>
+                <div class="space-y-2.5 font-sans text-xs text-stone-700">
+                    <div class="flex items-center gap-4">
+                        <span class="w-24 text-right shrink-0 font-semibold">Single Face</span>
+                        <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-emerald-500 h-3 rounded-full" style="width: 6%"></div></div>
+                        <span class="text-emerald-700 font-bold w-36 shrink-0">+151ms (n.s.) — no delay</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="w-24 text-right shrink-0 font-semibold">No Face</span>
+                        <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-amber-400 h-3 rounded-full" style="width: 50%"></div></div>
+                        <span class="text-amber-700 font-bold w-36 shrink-0">+1,225ms (p=.003) — baseline</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="w-24 text-right shrink-0 font-semibold">Multi Face</span>
+                        <div class="flex-grow bg-stone-100 rounded-full h-3"><div class="bg-rose-500 h-3 rounded-full" style="width: 100%"></div></div>
+                        <span class="text-rose-600 font-bold w-36 shrink-0">+2,464ms (p&lt;.001) — 2× baseline</span>
+                    </div>
+                </div>
+                <p class="text-[10px] text-stone-400 italic">Multi-face thumbnails delay information processing by over 2 seconds — doubling the layout baseline and significantly undermining decision-relevant cue encoding.</p>
+            </div>
         </div>
+
         <!--HUMAN_INSIGHT-->
-        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
-<div class="flex items-center gap-2 border-b border-stone-800 pb-2">
-    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
-    <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
-</div>            
-<div class="space-y-4">
+        <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6 mt-4">
+            <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
+            </div>
+            <div class="space-y-4">
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Directional gaze structuring.</span> Use thumbnails where faces look rightward or toward CTAs — implicitly directing the user's next visual sweep.</p>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Stage thumbnails by browsing context.</span> Use single face thumbnails at the compact scrolling scale to capture first fixation, then shift to scene-based designs on hover or expand — providing the genre and tone signals users need to actually commit to watching.</p>
                 </div>
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Dynamic AVA threshold feeds.</span> Alternate contrast levels algorithmically to prevent banner blindness and visual fatigue across session.</p>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Optimise for mood, not faces.</span> Emotional response depended on scene-level cues — lighting, tone, and narrative context — not facial presence. Invest in genre-accurate visual tone rather than defaulting to faces as an emotional shortcut.</p>
                 </div>
                 <div class="flex gap-3 items-start">
                     <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
-                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Segment by time-of-day context.</span> Serve high-contrast, text-minimal thumbnails during late-night browsing to match reduced cognitive load capacity.</p>
+                    <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Eliminate multi-face thumbnails in information-dense rows.</span> Multiple faces impose a 2.4-second information processing delay and distribute rather than anchor attention — reducing cue encoding depth and the likelihood of an informed viewing decision.</p>
                 </div>
             </div>
         </div>
