@@ -758,7 +758,7 @@ customVisualHTML: `
                 title: "What Makes Someone Choose a Guinness?",
                 framework: "LSE Marketing Analytics I Module",
                 methodology: "Designed and executed a comprehensive mixed-methods consumer study on Guinness purchase intention. The qualitative stage comprised five semi-structured interviews to map how individuals articulate their drinking motivations and identify with constructs established in the Modified Drinking Motives Questionnaire (DMQR; Cooper, 1994). Interviews revealed a fifth motivation — Cultural Exploration (ties to Irish heritage, football fandom, and cultural curiosity) which was incorporated into the quantitative stage. The quantitative survey (N = 233) measured five motive types (Social, Enhancement, Coping, Conformity, and Cultural Exploration) against Guinness purchase intention using validated Likert scales. A multiple linear regression was run in R with full assumption validation. An embedded between-subjects advertising experiment (N = 175) using gen-AI images further tested the causal effects of motive-framed ad conditions on ad quality ratings and brand perception change.",
-                results: `The model was statistically significant (F(5, 227) = 79.77, p &lt; .001), explaining 63.7% of variance in purchase intention (R² = .637). Enhancement (β = +0.54, p &lt; .001) and Coping (β = +0.21, p &lt; .001) were the strongest positive predictors. Social motivation also significantly predicted higher purchase intention (β = +0.12, p = .02). Contrary to H1b, Conformity motivation significantly predicted <em>lower</em> purchase intention (β = −0.19, p &lt; .001). Cultural Exploration showed no significant main effect (β = +0.03, p = .50), though interaction analysis revealed it was a stronger driver among visitors and tourists (p = .08). The advertising experiment confirmed motive fit matters: conformity-framed ads produced the lowest ad quality ratings and the only negative brand perception shift (M = −0.66), while social-framed ads generated the strongest positive brand response (M = +0.83). The boxplot analysis further revealed that Cultural Exploration motives are significantly more pronounced among recent international arrivals and tourists compared to long-term UK residents, confirming the interaction effect directionally (p=.08).`,
+                results: `The regression model was statistically significant (F(5,227) = 79.77, p < .001, R² = .637). Enhancement (β = +0.54) and Coping (β = +0.21) were the strongest positive predictors, followed by Social motivation (β = +0.12, p = .02). Conformity was the only negative predictor (β = −0.19, p < .001), actively suppressing purchase intent. Cultural Exploration showed no main effect (β = +0.03, n.s.), though it emerged as a stronger driver among visitors and recent arrivals (p = .08) — consistent with the boxplot pattern. Ad framing confirmed motive fit matters: conformity-framed ads produced the only negative brand perception shift (M = −0.66), while social-framed ads generated the strongest positive response (M = +0.83).`,
                 humanInsight: "Conformity drinking is anti-correlated with Guinness purchase intent, where people don't choose Guinness because everyone else does. They choose it as a deliberate act of cultural participation and personal identity expression. The \"Split the G\" ritual is not marketing fluff; it is a behavioural identity marker that signals belonging without demanding conformity. Guinness is most effective when positioned as an experiential, individualistic choice rather than a social default.",
                 recommendations: [
                     "Leverage 'Small-Win Moments' to frame Guinness as a rewarding ritual.",
@@ -932,9 +932,6 @@ customVisualHTML: `
                                 </div>
                             </div>
                         </div>
-                        <p class="text-[11px] text-stone-600 italic leading-relaxed">
-                            *Qualitative & Quantitative Triangulation: Exploratory interviews mapped out a fifth distinct driver: Cultural Exploration (ties to Irish heritage, study abroad transitions, and Celtic fandoms). The subsequent boxplot diagnostics confirmed that Cultural motives are highly pronounced for recent international arrivals and transient tourists compared to long-term UK residents.
-                        </p>
                     </div>
                     
                     <!--HUMAN_INSIGHT-->
@@ -981,7 +978,7 @@ customVisualHTML: `
             framework: "LSE Consumer Neuroscience Module (MG4J7) — Group Research",
             methodology: `Conducted a 3×3 within-subjects experiment (N=25) measuring how thumbnail facial presence affects visual attention and emotional engagement in a Netflix-style interface. Nine AI-generated stimuli were created across three genres (Action, Horror, Comedy) × three face conditions (Single Face, Multiple Faces, No Face), with visual tone, colour palette, text, and text placement held constant across conditions to isolate the facial variable.
 <br><br>
-Data collected via iMotions using two biometric channels: eye-tracking (fixation duration, Time to First Fixation [TTFF], fixation count, and proportion of fixation per AOI) and facial coding (Affectiva AFFDEX, frame-by-frame AU detection averaged per stimulus per participant). A post-study Qualtrics survey captured stated preferences and liking scores to compare with observed behaviour.
+Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixation [TTFF], fixation count, and proportion of fixation per AOI) and facial coding (Affectiva AFFDEX, frame-by-frame AU detection averaged per stimulus per participant). A post-study Qualtrics survey captured stated preferences and liking scores to compare with observed behaviour.
 <br><br>
 <span class="font-semibold text-stone-700">Hypotheses (preregistered):</span>
 <ul class="mt-2 space-y-1 list-none">
@@ -990,7 +987,7 @@ Data collected via iMotions using two biometric channels: eye-tracking (fixation
     <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H2:</strong> Single or multiple face thumbnails will increase emotional engagement relative to non-face thumbnails.</span></li>
     <li class="flex gap-2 items-start"><span class="text-emerald-700 font-bold mt-0.5">▪</span><span class="text-sm text-stone-600"><strong>H3:</strong> Single or multiple face thumbnails will reduce attention to informational cues (genre, episode count, recommendation label) compared to non-face thumbnails.</span></li>
 </ul>`,
-        results: `Three of four hypotheses were supported. Single face thumbnails attracted significantly faster first fixation than no-face thumbnails (Δ=2,297ms, p=0.0004) and many-face thumbnails (Δ=1,213ms, p=0.0096), confirming H1a. However, dwell time did not differ significantly across conditions (F=1.548, p=0.219) — faces capture attention fast but do not hold it longer, so H1b was not supported. Emotional engagement (H2) also showed no significant difference across face conditions in facial coding data, with non-face thumbnails matching or outperforming face conditions in Action and Horror genres; emotional response was driven by scene tone and context rather than facial presence. H3 was strongly supported: face presence significantly suppressed attention to informational cues across fixation duration (p=.003), fixation count (p=.005), and proportion of fixation (p<.001), with the number of faces modulating the intensity in a graded pattern.`,
+        results: `H1a confirmed: single faces attracted first fixation significantly faster than no-face (Δ=2,297ms, p=0.0004) and many-face thumbnails (Δ=1,213ms, p=0.0096). H1b and H2 were not supported; dwell time did not differ across conditions (F=1.548, p=0.219), and facial coding showed no emotional engagement advantage for face thumbnails, with scene tone and context proving stronger drivers than facial presence. H3 was strongly supported: faces suppressed attention to informational cues across fixation duration (p=.003), count (p=.005), and proportion (p<.001), with intensity scaling graded by face count.`,
         humanInsight: "A face is not a guaranteed emotional shortcut. Single faces win the race for attention — they are biologically prioritised by the Fusiform Face Area — but this doesn't translate into longer engagement or stronger emotional response. What actually drives emotional activation is scene-level tone: lighting, genre signals, and narrative context. The more dangerous finding for interface design is the attention trade-off: faces literally crowd out the informational cues (genre, rating, recommendation labels) that users need to make viewing decisions. Multiple faces are the worst offender, creating a 2.4-second information processing gap. The interface is inadvertently optimising for capture at the expense of conversion.",
         recommendations: [
         "Use single face thumbnails at the scrolling scale to capture initial fixation — but shift to scene-based, context-rich designs when thumbnails expand on hover, giving users the genre and tone signals they need to commit.",
@@ -999,7 +996,12 @@ Data collected via iMotions using two biometric channels: eye-tracking (fixation
     ],
                 customChartHTML: `
     <div class="space-y-6">
-
+<!-- Heatmap image -->
+<div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-3">
+    <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Eye-Tracking Heatmaps — Attention Distribution by Face Condition</span>
+    <img src="assets/netflix-heatmap.png" class="w-full rounded-xl" alt="Netflix eye-tracking heatmaps" />
+    <p class="text-[10px] text-stone-400 italic leading-relaxed">Heatmaps show aggregated gaze fixation density across participants (N=25). Red/yellow zones indicate highest attention concentration. Single face condition (left) shows focused capture on the face with minimal spread to informational cues. Multi-face condition (centre) distributes attention across competing faces. No-face condition (right) shows broader gaze dispersal across titles, genre labels, and action buttons.</p>
+</div>
         <!-- H1a: TTFF -->
         <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
             <div>
@@ -1268,7 +1270,7 @@ Data collected via iMotions using two biometric channels: eye-tracking (fixation
                             <p class="text-sm text-stone-600 leading-relaxed">${data.methodology}</p>
                         </div>
                                              ${data.results ? `
-<div class="border-t border-stone-200 pt-4 space-y-4">
+<div class="pt-4 space-y-4">
     <h4 class="text-xs uppercase tracking-widest font-bold text-stone-700">Key Findings</h4>
     <p class="text-sm text-stone-600 leading-relaxed font-sans">${data.results}</p>
 </div>` : ''}
