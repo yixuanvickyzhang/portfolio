@@ -1201,14 +1201,14 @@ Data collected via iMotions: eye-tracking (fixation duration, Time to First Fixa
     category: "Performance Marketing & Digital Ad Allocation",
     title: "Funnel-Defying Paid Media: A Search-First Strategy",
     framework: "LSE Digital Marketing Module (MG4F3) — Group Simulation",
-    methodology: `A 7-round paid media simulation managing a $15,000 budget across Search, Display, and Shopping ad channels for a bag and accessories brand. Early rounds tested broadly across keyword combinations, audience segments, and ad formats to generate learning data, before consolidating spend into proven performers based on live ROAS and conversion signals.
+    methodology: `A 7-round paid media simulation managing a $15,000 budget across Search, Display, and Shopping ad channels for a bag and accessories brand. Early rounds tested broadly across keywords, audience segments, and ad formats to generate learning data before consolidating spend into proven performers based on live ROAS and conversion signals.
 <br><br>
-Keywords were tiered into best, moderate, and low performers with differentiated bidding applied accordingly. The central strategic decision was departing from the conventional awareness-first funnel model in favour of aggressive intent-capture via Search and Shopping from early rounds.`,
-    results: `The simulation generated $49,675 in revenue, 2.5x the $20,000 target. Search ads (36%, $5,400) delivered the strongest ROAS at 4.48, functioning as the primary revenue engine. Shopping ads (29%, $4,350) produced ROAS 3.26 across three subdivided product groups. The critical inflection came when display budget shifted from retargeting toward interest-based targeting: utilisation rose from $2,400 to $3,700 and revenue nearly doubled from ~$6,500 to ~$12,000. Retargeting, despite high theoretical ROAS, was constrained by audience pool size and only $756 of $2,100 allocated was spent.`,
-    humanInsight: "Retargeting has the highest ROI per dollar in theory, but only when the audience pool is large enough to spend into. At early growth stages with limited site traffic, front-loading budget into awareness and retargeting starves the channels that can actually convert, while intent-first allocation (Search and Shopping) performs well when audience scale is a constraint.",
+Keywords were tiered into best, moderate, and low performers with differentiated bidding. The key strategic call was departing from the conventional awareness-first funnel in favour of intent-capture via Search and Shopping from the earliest rounds.`,
+    results: `The simulation generated $49,675 in revenue, 2.5x the $20,000 target. Search (36% of budget) delivered the strongest ROAS at 4.48; Shopping (29%) followed at 3.26 across three product groups. The critical inflection came when display budget shifted from retargeting toward interest-based targeting: utilisation rose from $2,400 to $3,700 and revenue nearly doubled from ~$6,500 to ~$12,000. Retargeting, despite high theoretical ROAS, was constrained by audience pool size — only $756 of $2,100 allocated was spent.`,
+    humanInsight: "Retargeting has the highest ROI per dollar in theory, but only when the audience pool is large enough to spend into. At early growth stages with limited site traffic, front-loading budget into retargeting starves the channels that can actually convert, while intent-first allocation performs well when audience scale is a constraint.",
     recommendations: [
-        "Prioritise intent capture over funnel at early growth stages. For constrained budgets with limited existing audiences, retargeting cannot scale without sufficient traffic feeding the pool.",
-        "Tier keywords by performance, not just relevance. Structured categorisation into best, moderate, and low performers with differentiated bidding outperforms binary keep-or-cut decisions based on early data alone."
+        "Prioritise intent capture over funnel sequencing at early growth stages — retargeting can't scale without sufficient traffic feeding the pool.",
+        "Tier keywords by performance, not just relevance — structured best/moderate/low categorisation with differentiated bidding beats binary keep-or-cut decisions."
     ],
     customChartHTML: `
         <div class="space-y-6">
@@ -1302,6 +1302,34 @@ Keywords were tiered into best, moderate, and low performers with differentiated
                 </div>
             </div>
         </div>
+
+                    <!-- Self-Directed SQL Follow-Up -->
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Self-Directed Follow-Up: Re-Deriving the Findings in SQL</span>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                    This project's findings were originally reached through spreadsheet-based ROAS tracking. To build SQL fluency for marketing measurement work, I rebuilt the same analysis using SQL against a simulated ad spend dataset structured to mirror this campaign's channel mix (Search, Shopping, Display, Retargeting).
+                </p>
+
+                <div class="space-y-2">
+                    <div class="text-[10px] uppercase font-bold text-stone-500">Channel ROAS Ranking</div>
+                    <img src="assets/sql-channel-roas.png" alt="SQL query and output ranking channels by ROAS" class="w-full rounded-xl border border-stone-200" />
+                    <p class="text-[11px] text-stone-500">Used <code class="bg-stone-100 px-1 rounded">GROUP BY</code> to derive ROAS per channel directly from raw rows, rather than reporting a pre-computed figure.</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-[10px] uppercase font-bold text-stone-500">Cost-Per-Conversion Anomalies</div>
+                    <img src="assets/sql-cost-anomaly.png" alt="SQL output showing days with worst cost per conversion" class="w-full rounded-xl border border-stone-200" />
+                    <p class="text-[11px] text-stone-500">All five worst-performing days belonged to Display, corroborating the channel-level ROAS finding at the individual-day level — exactly the kind of discrepancy a client would flag and ask to be explained.</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="text-[10px] uppercase font-bold text-stone-500">Week-Over-Week Revenue Trend</div>
+                    <img src="assets/sql-weekly-trend.png" alt="SQL output showing week over week revenue change per channel using LAG window function" class="w-full rounded-xl border border-stone-200" />
+                    <p class="text-[11px] text-stone-500">Used a <code class="bg-stone-100 px-1 rounded">LAG()</code> window function to track revenue change per channel across weeks — generalising this campaign's before/after reallocation finding into an ongoing volatility check rather than a one-off comparison.</p>
+                </div>
+
+                <p class="text-[10px] text-stone-400 italic">Dataset is simulated for practice purposes, structured to resemble this campaign's channel mix and scale — not a re-run of the original assignment's actual figures.</p>
+            </div>
     `
 },
         };
