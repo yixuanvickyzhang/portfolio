@@ -1304,27 +1304,27 @@ Keywords were tiered into best, moderate, and low performers with differentiated
         </div>
 
                     <!-- Self-Directed SQL Follow-Up -->
-            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
-                <span class="text-[10px] uppercase font-bold text-emerald-800 block tracking-wider">Self-Directed Follow-Up: Re-Deriving the Findings in SQL</span>
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-6">
+                <span class="text-[14px] uppercase font-bold text-emerald-800 block tracking-wider">Self-Directed Follow-Up: Re-Deriving the Findings in SQL</span>
                 <p class="text-xs text-stone-600 leading-relaxed">
                     This project's findings were originally reached through spreadsheet-based ROAS tracking. To build SQL fluency for marketing measurement work, I rebuilt the same analysis using SQL against a simulated ad spend dataset structured to mirror this campaign's channel mix (Search, Shopping, Display, Retargeting).
                 </p>
 
                 <div class="space-y-2">
                     <div class="text-[10px] uppercase font-bold text-stone-500">Channel ROAS Ranking</div>
-                    <img src="assets/sql-channel-roas.png" alt="SQL query and output ranking channels by ROAS" class="w-full rounded-xl border border-stone-200" />
+                    <img src="assets/sql-channel-roas.png" alt="SQL query and output ranking channels by ROAS" class="max-w-md w-full mx-auto rounded-xl border border-stone-200" />
                     <p class="text-[11px] text-stone-500">Used <code class="bg-stone-100 px-1 rounded">GROUP BY</code> to derive ROAS per channel directly from raw rows, rather than reporting a pre-computed figure.</p>
                 </div>
 
                 <div class="space-y-2">
                     <div class="text-[10px] uppercase font-bold text-stone-500">Cost-Per-Conversion Anomalies</div>
-                    <img src="assets/sql-cost-anomaly.png" alt="SQL output showing days with worst cost per conversion" class="w-full rounded-xl border border-stone-200" />
+                    <img src="assets/sql-cost-anomaly.png" alt="SQL output showing days with worst cost per conversion" class="max-w-md w-full mx-auto rounded-xl border border-stone-200"
                     <p class="text-[11px] text-stone-500">All five worst-performing days belonged to Display, corroborating the channel-level ROAS finding at the individual-day level — exactly the kind of discrepancy a client would flag and ask to be explained.</p>
                 </div>
 
                 <div class="space-y-2">
                     <div class="text-[10px] uppercase font-bold text-stone-500">Week-Over-Week Revenue Trend</div>
-                    <img src="assets/sql-weekly-trend.png" alt="SQL output showing week over week revenue change per channel using LAG window function" class="w-full rounded-xl border border-stone-200" />
+                    <img src="assets/sql-weekly-trend.png" alt="SQL output showing week over week revenue change per channel using LAG window function" class="max-w-md w-full mx-auto rounded-xl border border-stone-200" />
                     <p class="text-[11px] text-stone-500">Used a <code class="bg-stone-100 px-1 rounded">LAG()</code> window function to track revenue change per channel across weeks — generalising this campaign's before/after reallocation finding into an ongoing volatility check rather than a one-off comparison.</p>
                 </div>
 
