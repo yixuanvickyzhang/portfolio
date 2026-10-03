@@ -1279,30 +1279,6 @@ Keywords were tiered into best, moderate, and low performers with differentiated
                 <p class="text-[10px] text-stone-400 italic">Shifting display budget from retargeting toward interest-based targeting nearly doubled revenue by feeding more users into the conversion funnel rather than re-engaging a pool too small to scale.</p>
             </div>
 
-            <!--HUMAN_INSIGHT-->
-
-            <div class="bg-stone-900 text-white p-6 rounded-2xl space-y-6">
-                <div class="flex items-center gap-2 border-b border-stone-800 pb-2">
-                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400">Brand Recommendations</span>
-                </div>
-                <div class="space-y-4">
-                    <div class="flex gap-3 items-start">
-                        <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">1</span>
-                        <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Prioritise intent capture at early growth stages.</span> High-intent Search and Shopping outperform display when retargeting audiences are too small to scale, instead may feed the pool before relying on it.</p>
-                    </div>
-                    <div class="flex gap-3 items-start">
-                        <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">2</span>
-                        <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Tier keywords by performance, not just relevance.</span> Structured categorisation into best, moderate, and low performers with differentiated bidding outperforms binary keep-or-cut decisions based on early data alone.</p>
-                    </div>
-                    <div class="flex gap-3 items-start">
-                        <span class="text-emerald-400 font-bold font-serif text-lg leading-none mt-0.5">3</span>
-                        <p class="text-xs text-stone-300 leading-relaxed"><span class="text-white font-semibold">Let ROAS data drive reallocation, not fixed channel quotas.</span> The display reallocation that nearly doubled revenue came from following performance signals, budget decisions should move toward highest-performing segments.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
                     <!-- Self-Directed SQL Follow-Up -->
             <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-6">
                 <span class="text-[14px] uppercase font-bold text-emerald-800 block tracking-wider">Self-Directed Follow-Up: Re-Deriving the Findings in SQL</span>
@@ -1319,16 +1295,16 @@ Keywords were tiered into best, moderate, and low performers with differentiated
                 <div class="space-y-2">
                     <div class="text-[10px] uppercase font-bold text-stone-500">Cost-Per-Conversion Anomalies</div>
                     <img src="assets/sql-cost-anomaly.png" alt="SQL output showing days with worst cost per conversion" class="max-w-md w-full mx-auto rounded-xl border border-stone-200"
-                    <p class="text-[11px] text-stone-500">All five worst-performing days belonged to Display, corroborating the channel-level ROAS finding at the individual-day level — exactly the kind of discrepancy a client would flag and ask to be explained.</p>
+                    <p class="text-[11px] text-stone-500">All five worst-performing days belonged to Display, corroborating the channel-level ROAS finding at the individual-day level.</p>
                 </div>
 
                 <div class="space-y-2">
                     <div class="text-[10px] uppercase font-bold text-stone-500">Week-Over-Week Revenue Trend</div>
                     <img src="assets/sql-weekly-trend.png" alt="SQL output showing week over week revenue change per channel using LAG window function" class="max-w-md w-full mx-auto rounded-xl border border-stone-200" />
-                    <p class="text-[11px] text-stone-500">Used a <code class="bg-stone-100 px-1 rounded">LAG()</code> window function to track revenue change per channel across weeks — generalising this campaign's before/after reallocation finding into an ongoing volatility check rather than a one-off comparison.</p>
+                    <p class="text-[11px] text-stone-500">Used a <code class="bg-stone-100 px-1 rounded">LAG()</code> window function to track revenue change per channel across weeks, this generalises this campaign's before/after reallocation finding into an ongoing volatility check rather than a one-off comparison.</p>
                 </div>
 
-                <p class="text-[10px] text-stone-400 italic">Dataset is simulated for practice purposes, structured to resemble this campaign's channel mix and scale — not a re-run of the original assignment's actual figures.</p>
+                <p class="text-[10px] text-stone-400 italic">Dataset is simulated for practice purposes, structured to resemble this campaign's channel mix and scale instead of a re-run of the original assignment's actual figures.</p>
             </div>
     `
 },
